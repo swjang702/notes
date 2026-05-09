@@ -96,5 +96,14 @@ Computer science includes many different kinds of research efforts, some of whic
     - If your field is interdisciplinary, ask people in the other discipline what they think is interesting.
     - In many areas, the data have a way of suggesting their own problems. Systems programmers can collect data on actual disk access patterns and study it for regularities to exploit. Theoreticians of programming languages can look at real programming languages, and graphics programmers can look at real photographs and movies, for effects that they don't know how to capture.
 
-*Finally:* Now that you're in grad school and no one sets your agenda, everything you do is open-ended. That means you can easily spend too much time on any task you start, especially if stubborn perfectionism or an inferiority complex leads you to feel that your work is never good enough, or if you're subconsciously trying to put off that scary next phase of your research.
+__Finally:__ Now that you're in grad school and no one sets your agenda, everything you do is open-ended. That means you can easily spend too much time on any task you start, especially if stubborn perfectionism or an inferiority complex leads you to feel that your work is never good enough, or if you're subconsciously trying to put off that scary next phase of your research.
 - Don't spend eternity on background reading. Recognize that you will have to start your work in a state of partial ignorance: you don't have time to learn everything you need to know. That's okay -- your professors do the same thing. In fact it's good, since ignorance leaves your mind free to see new ways of doing things. So start doing your own thinking early. You can alternate that with reading: just show your ideas periodically to someone who can warn you about related work and point you to relevant papers.
+- Don't spend eternity on one problem. No solution is ever complete. Take the time to make your work solid and beautiful and presentable, but recognize when you've hit a point of diminishing returns. Use project #1 to inspire project #2, which stands as research on its own. Don't use it as the core of project #1', #1'', etc. forever.
+
+# Write the Paper First
+https://www.cs.jhu.edu/~jason/advice/write-the-paper-first.html
+
+If you're planning to submit a conference paper, I'd like to strongly suggest that you __spend the next few days just writing the paper__ (even if you haven't yet planned or finished the experiments).
+
+# My thought
+- Like Lao Tzu's philosophy of non-action, a phd student have to learn to take some out rather than put it in?
