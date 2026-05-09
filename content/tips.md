@@ -87,3 +87,7 @@ The biological anthropologist Loren Eiseley used to say there were two kinds of 
 
 Computer science includes many different kinds of research efforts, some of which are more tyrannosaurical than others. You can contribute to one of these efforts in various ways:
 - About the smallest bone that you can find in Computer Science is a reproduction or implementation of someone else's work.
+- You can thoroughly review the existing research in some area.
+- Build a large program or device of some kind.
+- Your field identifies various problems or issues as significant. These often represent big bones in the skeleton of the field -- problems that arise often, and whose solution makes a difference. Get to know some of these problems and the work that's been done on them. If you see how to achieve the first-ever solution, or a better solution, or a different style of solution, that's a big deal. Sometimes finding a good solution involves changing the problem slightly.
+- If you are feeling ambitious and have a big-bone temperament, study important papers in your branch of computer science, flip through some conference proceedings to see what people are working on, and ask: What problems (recognized or unrecognized) are obstructing progress in my field? Can I solve them? If not, can I at least formalize them? Can I prove to my colleagues that solving them would make a difference?
