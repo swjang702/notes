@@ -72,13 +72,13 @@ Delip Rao suggests: _"Never read the original paper on X first. Instead read sev
 
 ## 2단계: 제품을 먼저 브레인스토밍하라
 
-### 제품의 주요 장점은 한문장으로 요약될 수 있어야 한다.
+제품의 주요 장점은 한문장으로 요약될 수 있어야 한다.
 
-### 고객이 지불하는 제품 비용은 (독자가 바꾸거나 받아들여야 할 신념의 정도는) 50달러에서 200달러 사이여야 한다.
+고객이 지불하는 제품 비용은 (독자가 바꾸거나 받아들여야 할 신념의 정도는) 50달러에서 200달러 사이여야 한다.
 
-### 생산 기간이 3주에서 4주 이상 걸려서는 안 된다.
+생산 기간이 3주에서 4주 이상 걸려서는 안 된다.
 
-### 온라인 FAQ로 설명이 충분해야 한다. (A paper with appendix should be enough to be reproducible.)
+온라인 FAQ로 설명이 충분해야 한다. (A paper with appendix should be enough to be reproducible.)
 
 # How to Find Research Problems
 https://www.cs.jhu.edu/~jason/advice/how-to-find-research-problems.html
