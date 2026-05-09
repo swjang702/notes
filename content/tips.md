@@ -107,3 +107,4 @@ If you're planning to submit a conference paper, I'd like to strongly suggest th
 
 # My thought
 - Like Lao Tzu's philosophy of non-action, a phd student have to learn to take some out rather than put it in?
+    - For example, when you want to truly understand what A means, you've got to put your book down and take some time to just think about it own yourself.
