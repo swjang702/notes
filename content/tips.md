@@ -1,3 +1,5 @@
+# How to Be a Successful PhD Student
+
 # Lawrence Saul's advice for new graduate students
 ## Vary your research diet
 Reading, writing, problem-solving, programming, brainstorming, etc.
