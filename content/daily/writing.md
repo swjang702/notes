@@ -1,2 +1,4 @@
 - Writing skill is so important that I take a fellowship.
 - If you don't give output own your word, you can't get it.
+    - Our brain deceit our mind as if it is our knowledge when we take new inputs.
+    - But that's not true but just feelings.
