@@ -1,1 +1,2 @@
-Writing skill is so important that I take a fellowship.
+- Writing skill is so important that I take a fellowship.
+- If you don't give output own your word, you can't get it.
