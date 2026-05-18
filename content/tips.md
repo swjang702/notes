@@ -110,3 +110,9 @@ If you're planning to submit a conference paper, I'd like to strongly suggest th
 # My thought
 - Like Lao Tzu's philosophy of non-action, a phd student have to learn to take some out rather than put it in?
     - For example, when you want to truly understand what A means, you've got to put your book down and take some time to just think about it own yourself.
+
+# Write Good Papers
+https://lemire.me/blog/rules-to-write-a-good-research-paper/
+
+## What a good paper should contain
+- A sexy start: tell the reader early why he should read your paper. Don’t summarize, sell! A good abstract tells us **why we should read this paper**, it does not summarize the paper. Convince us early that your paper is important. For example, the Kent Beck recipe for a good 4-sentence abstract is: (1) state the problem (2) say why it is interesting (3) say what your solution achieves (4) say what follows from your solution.
