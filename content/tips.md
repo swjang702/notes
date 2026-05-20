@@ -1,3 +1,8 @@
+# My thought
+- Like Lao Tzu's philosophy of non-action, a phd student have to learn to take some out rather than put it in?
+    - For example, when you want to truly understand what A means, you've got to put your book down and take some time to just think about it own yourself.
+- sync input cognition with my brain cognition is very important?
+
 # How to Be a Successful PhD Student
 
 # Lawrence Saul's advice for new graduate students
@@ -106,10 +111,6 @@ __Finally:__ Now that you're in grad school and no one sets your agenda, everyth
 https://www.cs.jhu.edu/~jason/advice/write-the-paper-first.html
 
 If you're planning to submit a conference paper, I'd like to strongly suggest that you __spend the next few days just writing the paper__ (even if you haven't yet planned or finished the experiments).
-
-# My thought
-- Like Lao Tzu's philosophy of non-action, a phd student have to learn to take some out rather than put it in?
-    - For example, when you want to truly understand what A means, you've got to put your book down and take some time to just think about it own yourself.
 
 # Write Good Papers
 https://lemire.me/blog/rules-to-write-a-good-research-paper/
