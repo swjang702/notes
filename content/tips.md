@@ -3,13 +3,13 @@
     - For example, when you want to truly understand what A means, you've got to put your book down and take some time to just think about it own yourself.
 - sync input cognition with my brain cognition is very important?
 
-# How to Be a Successful PhD Student
+# RESEARCH 101 FOR ENGINEERS by George A. Hazelrigg (National Science Foundation)
 
-# Lawrence Saul's advice for new graduate students
-## Vary your research diet
-Reading, writing, problem-solving, programming, brainstorming, etc.
+Research is the process of finding out something that we don't already know.
+First, it is important to recognize that research is a process.
+Second, the purpose of research is to find out something that we don't already know.
 
-# Honing Proposal Skills
+# Honing Proposal Skills by George A. Hazelrigg (National Science Foundation)
 Ergo, for NSF, the first sentence of paragraph one, page one should begin, “The research objective of this proposal is...” In my experience, any other sentence used to start the proposal results in a lower rating.
 
 The second thing that should be obvious is, given that NSF funds fundamental research, the research objective of the proposed project should be research. There are many words that, to reviewers, mean “not research.” These include “develop,” “design,” “optimize,” “control,” “manage,” and so on.
@@ -34,6 +34,12 @@ Understanding what comprises engineering research, you can begin to formulate yo
 
 The very statement of your research objective should lead you directly to your methodology.
 If it does not, you don’t have a clear statement of research objective.
+
+# How to Be a Successful PhD Student
+
+# Lawrence Saul's advice for new graduate students
+## Vary your research diet
+Reading, writing, problem-solving, programming, brainstorming, etc.
 
 # How to Read a Technical Paper 
 https://www.cs.jhu.edu/~jason/advice/how-to-read-a-paper.html
