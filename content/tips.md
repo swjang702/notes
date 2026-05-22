@@ -1,7 +1,7 @@
 # My thought
 - Like Lao Tzu's philosophy of non-action, a phd student have to learn to take some out rather than put it in?
     - For example, when you want to truly understand what A means, you've got to put your book down and take some time to just think about it own yourself.
-- sync input cognition with my brain cognition is very important?
+- sync input cognition rate with my brain cognition capability is very crucial?
 - One tip not to lose your path to your research journey is to keep opening the plan document for being within your sight while you are doing other things.
 
 # RESEARCH 101 FOR ENGINEERS by George A. Hazelrigg (National Science Foundation)
