@@ -1,0 +1,1 @@
+#### For journaling, lean on __phrasal verbs__ (end up, stick around, get to, creep in), __hedge words__ (actually, maybe, kind of), and __comparative phrases__ instead of "from the perspective of." Those three habits alone shift writing a long way toward natural.
