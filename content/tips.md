@@ -129,6 +129,7 @@ _"A well-known senior academic told me that they review papers by reading as far
 ### The document is a focus for discussion with others
 
 If you have a paper draft early, then you can give it to other people (including me) for feedback.
+Your draft can describe your motivation, formal problem, model, algorithms, and experiments before you actually build anything. (Ideally, it will also explain why you did it this way rather than some other way, and point out gaps that remain for future work.) By showing others the draft at this stage, you'll get important feedback _before_ you invest time in the "wrong" work.
 
 
 # Write Good Papers
