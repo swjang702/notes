@@ -1,4 +1,7 @@
-end up
-stick around
-get to
-creep in
+- end up
+    - Our team ended up staying late.
+- stick around
+- get to
+    - That atmosphere quietly gets to me without me even noticing.
+- creep in
+    - A thought keeps creeping in.
