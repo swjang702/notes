@@ -151,6 +151,15 @@ Your first step is to _outline_ the paper. Download the paper template from the 
 - The main goal of your experiments is to produce table and grpahs _for the document_. These should be produced and included automatically, with minimal fuss and minimal opportunity for human error.
     - This approach allows you to view and share the current results at any time. For your own understanding, you may want to run many experiments than can be included in the paper. In this case, make a separate "experimental logbook" document that includes and discusses the results of _all_ the experiments. This longer document can also be viewed and shared at any time.
 
+### The document is like a code specification
+Writing is a form of thinking and planning. Writing is therefore part of the research process---just as it is part of the software engineering process.
+
+Of course, neither coding nor research is purely top-down---in practice, there's feedback. But crucially, you'll keep the code and the paper in sync.
+
+### Writing _now_ is a favor to yourslef.
+
+You'll feel so much better once you have a draft! The looming deadline will not be nearly so stressful.
+
 
 # Write Good Papers
 https://lemire.me/blog/rules-to-write-a-good-research-paper/
