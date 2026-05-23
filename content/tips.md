@@ -161,6 +161,11 @@ Of course, neither coding nor research is purely top-down---in practice, there's
 You'll feel so much better once you have a draft! The looming deadline will not be nearly so stressful.
 
 
+# How to Succeed in Graduate School: A Guide for Students and Advisors
+https://www.cs.princeton.edu/~jrex/teaching/spring2005/fft/acm_gradschool2.htm
+
+
+
 # Write Good Papers
 https://lemire.me/blog/rules-to-write-a-good-research-paper/
 
