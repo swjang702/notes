@@ -114,10 +114,22 @@ __Finally:__ Now that you're in grad school and no one sets your agenda, everyth
 - Don't spend eternity on background reading. Recognize that you will have to start your work in a state of partial ignorance: you don't have time to learn everything you need to know. That's okay -- your professors do the same thing. In fact it's good, since ignorance leaves your mind free to see new ways of doing things. So start doing your own thinking early. You can alternate that with reading: just show your ideas periodically to someone who can warn you about related work and point you to relevant papers.
 - Don't spend eternity on one problem. No solution is ever complete. Take the time to make your work solid and beautiful and presentable, but recognize when you've hit a point of diminishing returns. Use project #1 to inspire project #2, which stands as research on its own. Don't use it as the core of project #1', #1'', etc. forever.
 
+
 # Write the Paper First
 https://www.cs.jhu.edu/~jason/advice/write-the-paper-first.html
 
 If you're planning to submit a conference paper, I'd like to strongly suggest that you __spend the next few days just writing the paper__ (even if you haven't yet planned or finished the experiments).
+
+### Clear writing increases your odds of acceptance.
+
+Clear motivation and exposition are more important than results for getting your paper accepted. If you run out of time, it is better to have a great story with incomplete experiments than a sloppy draft with compelete experiments. A good paper builds its case with the accumulated weight of several experiments, so missing a few is not fatal (and you can finish them for the camera-ready version). But a confusing, unconvincing, or incomplete writeup is fatal.
+
+_"A well-known senior academic told me that they review papers by reading as far as they can understand, then assigning a score based on how far they got."_
+
+### The document is a focus for discussion with others
+
+If you have a paper draft early, then you can give it to other people (including me) for feedback.
+
 
 # Write Good Papers
 https://lemire.me/blog/rules-to-write-a-good-research-paper/
