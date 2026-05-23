@@ -1,4 +1,12 @@
+### Casual Writing
+
 #### For journaling, lean on __phrasal verbs__ (end up, stick around, get to, creep in), __hedge words__ (actually, maybe, kind of), and __comparative phrases__ instead of "from the perspective of." Those three habits alone shift writing a long way toward natural.
+
+### The underlying logic for formal writing
+
+All these moves serve one goal: distance. Academic writing positions the writer as a neutral analyst, even when the subject is themselves. Version 2 says "here is what is happening in my head right now." Version 3 says "here is a phenomenon worth analyzing, which happens to involve me." Same content, opposite stance toward the reader.
+
+So if you ever want to push your own writing in the academic direction, the quickest levers are: swap phrasal verbs (get to, end up, stick around) for single Latinate verbs (affect, result in, remain), turn your actions into noun phrases, and start sentences with "It is..." or "This..." instead of "I...".
 
 #### Word choice: Latin/French roots over Anglo-Saxon
 
