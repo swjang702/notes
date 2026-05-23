@@ -3,6 +3,7 @@
     - For example, when you want to truly understand what A means, you've got to put your book down and take some time to just think about it own yourself.
 - sync input cognition rate with my brain cognition capability is very crucial?
 - One tip not to lose your path to your research journey is to keep opening the plan document for being within your sight while you are doing other things.
+- The process from the running of experiments to the final creating tables or graphs should be one-shot triggered by like Makefile in Latex of your paper.
 
 # RESEARCH 101 FOR ENGINEERS by George A. Hazelrigg (National Science Foundation)
 
@@ -36,7 +37,7 @@ Understanding what comprises engineering research, you can begin to formulate yo
 The very statement of your research objective should lead you directly to your methodology.
 If it does not, you don’t have a clear statement of research objective.
 
-# How to Be a Successful PhD Student
+# How to Be a Successful PhD Student (@)
 
 # Lawrence Saul's advice for new graduate students
 ## Vary your research diet
@@ -115,7 +116,7 @@ __Finally:__ Now that you're in grad school and no one sets your agenda, everyth
 - Don't spend eternity on one problem. No solution is ever complete. Take the time to make your work solid and beautiful and presentable, but recognize when you've hit a point of diminishing returns. Use project #1 to inspire project #2, which stands as research on its own. Don't use it as the core of project #1', #1'', etc. forever.
 
 
-# Write the Paper First
+# Write the Paper First (@)
 https://www.cs.jhu.edu/~jason/advice/write-the-paper-first.html
 
 If you're planning to submit a conference paper, I'd like to strongly suggest that you __spend the next few days just writing the paper__ (even if you haven't yet planned or finished the experiments).
@@ -130,6 +131,25 @@ _"A well-known senior academic told me that they review papers by reading as far
 
 If you have a paper draft early, then you can give it to other people (including me) for feedback.
 Your draft can describe your motivation, formal problem, model, algorithms, and experiments before you actually build anything. (Ideally, it will also explain why you did it this way rather than some other way, and point out gaps that remain for future work.) By showing others the draft at this stage, you'll get important feedback _before_ you invest time in the "wrong" work.
+
+### Writing is a mechanism for planning what to work on
+
+#### Is it a good topic?
+
+#### What needs to be done?
+
+- Your _introductioin_ will make some claims.
+- Writing the _literature review_ will help you design your experiments.
+    - However, don't write the lit review _first_.
+- Writing the _experimental section_ is possible even before you've done the experiments.
+
+### The document is an organizing scheme for your work on the paper
+
+Your first step is to _outline_ the paper. Download the paper template from the conference website. Come up with a good title a good title (and an abstract if you like), and write the section/subsection headers.
+**This file will turn into your final documetn.** Everything you do from now on should be focused on improving it!
+
+- The main goal of your experiments is to produce table and grpahs _for the document_. These should be produced and included automatically, with minimal fuss and minimal opportunity for human error.
+    - This approach allows you to view and share the current results at any time. For your own understanding, you may want to run many experiments than can be included in the paper. In this case, make a separate "experimental logbook" document that includes and discusses the results of _all_ the experiments. This longer document can also be viewed and shared at any time.
 
 
 # Write Good Papers
