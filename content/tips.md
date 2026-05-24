@@ -170,6 +170,7 @@ One of the most important skills you should be learning in graduate school is ho
 Going to conferences and standing in the corner is not enough. Especially if you're not normally an outgoing person, you have to make a conscious effort to meet and build relationships with other researchers.
 
 Have summaries of various lengths and levels of detail of your work mentally prepared, so that you can intelligently and clearly answer the inevitable ``So what are you wokring on??``.
+If someone expresses an interest in your work, follow up! Send them email talking about new ideas or asking questions; send them drafts of papers; ask them for drafts of their papers and send them comments. (If you do this, they'll be sure to remember you!)
 
 
 # Write Good Papers
