@@ -164,6 +164,10 @@ You'll feel so much better once you have a draft! The looming deadline will not 
 # How to Succeed in Graduate School: A Guide for Students and Advisors
 https://www.cs.princeton.edu/~jrex/teaching/spring2005/fft/acm_gradschool2.htm
 
+## Networking
+
+One of the most important skills you should be learning in graduate school is how to ``network.``
+Going to conferences and standing in the corner is not enough. Especially if you're not normally an outgoing person, you have to make a conscious effort to meet and build relationships with other researchers.
 
 
 # Write Good Papers
@@ -171,3 +175,5 @@ https://lemire.me/blog/rules-to-write-a-good-research-paper/
 
 ## What a good paper should contain
 - A sexy start: tell the reader early why he should read your paper. Don’t summarize, sell! A good abstract tells us **why we should read this paper**, it does not summarize the paper. Convince us early that your paper is important. For example, the Kent Beck recipe for a good 4-sentence abstract is: (1) state the problem (2) say why it is interesting (3) say what your solution achieves (4) say what follows from your solution.
+
+
