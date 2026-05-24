@@ -117,7 +117,8 @@ Version 2 starts with "Does skipping overtime actually protect..." — you, doin
 Same move at the end: "what should I do about it" (you, deciding) → "what would constitute an appropriate response on my part" (the response exists as an abstract object you're identifying).
 
 
-# List of Germanic and Latinate equivalents in English
+# List of Germanic(Anglo-Saxon) and Latinate(French) equivalents in English
 https://en.wikipedia.org/wiki/List_of_Germanic_and_Latinate_equivalents_in_English
+https://en.wikipedia.org/wiki/List_of_English_words_with_dual_French_and_Old_English_variations
 
 
