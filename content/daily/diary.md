@@ -19,3 +19,8 @@ Does skipping overtime actually protect my mental bandwidth the way I think it d
 It is worth examining whether my decision to refrain from working overtime in the evenings genuinely preserves my mental bandwidth. Within our team, members typically remain at the office for as long as the supervisor does, and this prevailing atmosphere appears to exert a subconscious influence on my attention. This observation prompts a question: from the standpoint of conserving energy and cognitive resources, does working overtime at the office in fact prove more advantageous than departing on time? If so—or if alternative interpretations merit consideration—what would constitute an appropriate response on my part?
 
 ---
+
+#### Sun, May 24, 2026
+
+(Latinate style + Germanic)
+After learning the history of English, such as Anglo-Saxon and Latinate, my decision to study English for PhD has became to learn mainly Latinate words and sentence styles.
