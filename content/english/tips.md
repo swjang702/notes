@@ -76,12 +76,13 @@ Same event, totally different worlds. The first one *happens* in front of you. T
 
 Native writers don't pick "100% Anglo-Saxon" or "100% Latinate" — they mix, and the mix sets the tone. A diary leans ~80% Anglo-Saxon. A casual email is maybe 70/30. A business email tilts to 50/50. An academic paper flips to 30/70 or further. Once you can hear which bucket a word falls into, you can dial your writing's register up and down on purpose — which is exactly what you were doing across your three versions.
 
+---
 
 ### Casual Writing
 
-#### For journaling, lean on __phrasal verbs__ (end up, stick around, get to, creep in), __hedge words__ (actually, maybe, kind of), and __comparative phrases__ instead of "from the perspective of." Those three habits alone shift writing a long way toward natural.
+For journaling, lean on __phrasal verbs__ (end up, stick around, get to, creep in), __hedge words__ (actually, maybe, kind of), and __comparative phrases__ instead of "from the perspective of." Those three habits alone shift writing a long way toward natural.
 
-### The underlying logic for formal writing
+### Formal Writing: The underlying logic
 
 All these moves serve one goal: distance. Academic writing positions the writer as a neutral analyst, even when the subject is themselves. Version 2 says "here is what is happening in my head right now." Version 3 says "here is a phenomenon worth analyzing, which happens to involve me." Same content, opposite stance toward the reader.
 
