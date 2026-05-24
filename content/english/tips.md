@@ -115,3 +115,9 @@ The writer disappears behind these noun phrases — you're left examining concep
 Version 2 starts with "Does skipping overtime actually protect..." — you, doing something. Version 3 starts with "It is worth examining whether..." — no agent, just a topic floating in space. This "it is worth ~ing" / "it is necessary to ~" pattern is one of the most reliable signals of academic register. The writer treats themselves as a case study, not a person.
 
 Same move at the end: "what should I do about it" (you, deciding) → "what would constitute an appropriate response on my part" (the response exists as an abstract object you're identifying).
+
+
+# List of Germanic and Latinate equivalents in English
+https://en.wikipedia.org/wiki/List_of_Germanic_and_Latinate_equivalents_in_English
+
+
