@@ -169,6 +169,8 @@ https://www.cs.princeton.edu/~jrex/teaching/spring2005/fft/acm_gradschool2.htm
 One of the most important skills you should be learning in graduate school is how to ``network.``
 Going to conferences and standing in the corner is not enough. Especially if you're not normally an outgoing person, you have to make a conscious effort to meet and build relationships with other researchers.
 
+Have summaries of various lengths and levels of detail of your work mentally prepared, so that you can intelligently and clearly answer the inevitable ``So what are you wokring on??``.
+
 
 # Write Good Papers
 https://lemire.me/blog/rules-to-write-a-good-research-paper/
