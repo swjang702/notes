@@ -172,6 +172,8 @@ Going to conferences and standing in the corner is not enough. Especially if you
 Have summaries of various lengths and levels of detail of your work mentally prepared, so that you can intelligently and clearly answer the inevitable ``So what are you wokring on??``.
 If someone expresses an interest in your work, follow up! Send them email talking about new ideas or asking questions; send them drafts of papers; ask them for drafts of their papers and send them comments. (If you do this, they'll be sure to remember you!)
 
+Finding specific mentors can be very useful. Especially if you feel that you are isolated at your institution, having a colleague at another institution who can give you advice, feedback on drafts of papers, and suggestions for research directions can be extremely valuable.
+
 
 # Write Good Papers
 https://lemire.me/blog/rules-to-write-a-good-research-paper/
