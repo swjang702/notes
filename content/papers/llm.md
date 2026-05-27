@@ -7,4 +7,4 @@
 ## Other Quotes
 * A Comprehensive Overview of Large Language Models: The deployment of LLMs on homogeneous hardware can be further optimized in memory, throughput, and latency space by efficiently managing the KV cache.
 
-- They so resemble the OS: virtual memory's page table, shared libraries, FIFO(First-Come-First-Serve), and so forth.
+- They so resemble the OS: virtual memory's page table/swapping, shared libraries, FIFO(First-Come-First-Serve), and so forth.
