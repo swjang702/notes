@@ -4,6 +4,7 @@
 - sync input cognition rate with my brain cognition capability is very crucial?
 - One tip not to lose your path to your research journey is to keep opening the plan document for being within your sight while you are doing other things.
 - The process from the running of experiments to the final creating tables or graphs should be one-shot triggered by like Makefile in Latex of your paper.
+- Build the one-shot research CI/CD pipeline.
 
 # RESEARCH 101 FOR ENGINEERS by George A. Hazelrigg (National Science Foundation)
 
