@@ -208,3 +208,4 @@ insurmountable
 stay on top of
 maneuver
 contingent on
+discern
