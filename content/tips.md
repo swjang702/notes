@@ -6,6 +6,114 @@
 - The process from the running of experiments to the final creating tables or graphs should be one-shot triggered by like Makefile in Latex of your paper.
 - Build the one-shot research CI/CD pipeline.
 
+# How to Be a Successful PhD Student by Mark Dredze and Hanna M. Wallach
+
+## Becoming a PhD Student
+
+We want to emphasize the importance of applying for external fellowships, such as NSF's Graduate Research Fellowships and NDSEG Fellowships. Having such a fellowship can make a huge difference to your graduate school experience. Since you can usually apply more than once, you have nothing to lose by applying for fellowships.
+
+#### 3. Think beyond the school.
+__If you aren't happy, you won't be successful. If you find yourself with no social life and no friends, you won't be happy.__
+
+## You and Your Advisor
+
+A good relationship with your advisor is critical to your succeess.
+
+### Meetings with Your Advisor
+
+#### 9. Make an agenda.
+Make an agenda for every meeting with your advisor.
+
+#### 10. Bring results.
+Try to bring results (e.g., graphs, tables, figures) to every meeting.
+
+#### 11. Start with a summary.
+
+## Managing Your Day-to-Day Work Life / Being Productive
+
+#### 13. Talk to other students.
+Talk to other students regularly, both within and outside your lab.
+
+#### 18. Keep a log.
+Keep a daily log of everything you do and everything you think. It's a good idea to make sure your log is searchable.
+
+#### 19. Getting things done
+
+#### 20. ⭐️ A social life.
+**You need to be happy to be productive and manage your work life effectively. Being happy usually involves having a social life.**
+
+#### 21. It's okay to get stuck.
+Remember that EVERYONE gets stuck/demoralized/etc. No, really. Even super famous, successful, seemingly-perfect researchers get stuck/demoralized/etc. **What makes them successful, however, is that they figure out how to move past these low points to the next great idea.**
+
+#### Learn from your mistakes.
+Failing is fine (and arguably an important key to success). The questions is what you do *after* failing. Take notes. Understand why you failed and think about what you'd do differently next time. **Many awesome research ideas came about because someone failed and then asked "why?"**
+
+## Research
+
+### Reading Papers
+
+#### 23. Read, read, read!
+
+#### 24. Take notes.
+Make notes about every paper you read. Make notes at multiple levels of granularity.
+
+### Picking a Research Topic
+
+#### 27. Know the literature.
+You need to know what's been previously in order to make sure your contributioins are actually novel and useful.
+
+#### 28. Know the community.
+
+#### 29. Think big.
+
+#### 30. It takes time.
+Good research ideas don't happen along every day.
+
+### The Research Process
+
+#### 33. Start with writing.
+When you have an idea, start by writing it down. Work out the details on paper first before you write any code. This will help expose problems. and flesh out the details.
+*When working on a paper, write an outline before writing any text so you know what you are tyring to do.*
+
+#### 34. Learn when to quit.
+
+#### 35. Don't be deadline focused.
+
+#### 36. Don't leave the writing to the end.
+
+#### 38. Implement.
+**You understand best when you implement (understanding = intuition + math + code).** If you can, implement things more than once (e.g., using two different methods, or in two different languages) and check your implementations give identical results.
+
+### Getting (and Presenting) Good Results
+
+#### 40. Know your data.
+Know your data really well. Make sure it exhibits the properties you think it does.
+
+#### 41. Know your software.
+Make sure you understand what the software packages you're using are doing.
+**There's an "easy" way to do this: read the source code.** If there's no source code, be wary.
+
+#### 42. ⭐️ Good baselines.
+Beating baselines is good, but only if they are worth beating.
+Learn how to come up with convincing, effective, and SIMPLE baselines.
+**Always ask yourself, "What's the simplest experiment I could do to (in)validate my hypothesis?" Talented researchers have a knack for coming up with simple baselines.**
+
+#### 43. Understand your results.
+It's not sufficient to know that your method gets 95% accuracy on your data.
+**You also need to know exactly what's happening on the 5% of data points for which your method DOESN'T work.**
+Look at actual data points that your method is handling (in)correctly, plot/visualize your results in various different ways, etc. This exercise will be useful when presenting your work and when improving upon it.
+
+#### 44. Make your results accessible.
+Learn how to present results such that they are acceessible, useful, and convincing.
+**Your results are only convincing if they are understandable.**
+
+#### 46. Finish writing early.
+Not only will this give you time to polish your writing, get feedback from others, and run any experiments they suggest, but it makes it more likely that you'll actually get any useful feedback from your advisor.
+
+#### 47. Learn how to write well.
+*As a scientist, it's your job to communicate your ideas to others. It doesn't matter how amazing your work is, it's unlikely to have any impact if no one can understand your explanations.*
+
+
 # RESEARCH 101 FOR ENGINEERS by George A. Hazelrigg (National Science Foundation)
 
 Research is the process of finding out something that we don't already know.
@@ -37,8 +145,6 @@ Understanding what comprises engineering research, you can begin to formulate yo
 
 The very statement of your research objective should lead you directly to your methodology.
 If it does not, you don’t have a clear statement of research objective.
-
-# How to Be a Successful PhD Student (@)
 
 # Lawrence Saul's advice for new graduate students
 ## Vary your research diet
