@@ -93,7 +93,7 @@ Know your data really well. Make sure it exhibits the properties you think it do
 Make sure you understand what the software packages you're using are doing.
 **There's an "easy" way to do this: read the source code.** If there's no source code, be wary.
 
-#### 42. ⭐️ Good baselines.
+#### 42. ⭐️  Good baselines.
 Beating baselines is good, but only if they are worth beating.
 Learn how to come up with convincing, effective, and SIMPLE baselines.
 **Always ask yourself, "What's the simplest experiment I could do to (in)validate my hypothesis?" Talented researchers have a knack for coming up with simple baselines.**
@@ -112,6 +112,55 @@ Not only will this give you time to polish your writing, get feedback from other
 
 #### 47. Learn how to write well.
 *As a scientist, it's your job to communicate your ideas to others. It doesn't matter how amazing your work is, it's unlikely to have any impact if no one can understand your explanations.*
+
+#### 48. Reproduce your results.
+Part of publishing is attesting to the accurate of your published results. That means you must be able to reproduce them.
+
+#### 49. Reorganize after submission.
+Organize and document your code, results, etc. IMMEDIATELY after a paper deadline.
+Don't kid yourself -- if you don't it then, it's never going to happen.
+
+#### 51. Quality and not quantity.
+You will be judged based on the quality, and not the quantity of your publicatioins.
+
+### Talks
+We cannot overestimate the importance of giving good talks. A good talk can make the difference between people reading/citing your conference paper and people dismissing it.
+Furthermore, knowing how to give a good talk will help you get a good job after graduate school.
+**As a PhD student, you must learn how to give gook talks, so start early.**
+
+#### 53. Practice.
+The single best way to learn how to give good talks is to practice. Practice in front of the mirror, in front of friends, colleagues, etc.
+*Also, find opportunities to give talks. If your school has a student seminar, volunteer to speak.*
+
+#### 54. Ask for feedback.
+If you give a talk (either a practice talk or a real talk) ask your audience for feedback on clarity, style, content, presentation, etc.
+
+#### 55. Spend time on content.
+However, this is far less important than having a clear outline and clear ways of presenting your content.
+Spend your time on what you want to say and how you want to say it before you work on fancy animations.
+
+## Professional Development
+Professional development, networking, and (ultimately) finding a job are important.
+
+#### 61. Do internships.
+
+#### 62. Review papers.
+Start reviewing papers in your research area. Offer to help your advisor with paper reviews -- they will almost always take you up on your offer. Ask your advisor for feedback on your reviews so you can improve your reviewing skills.
+
+#### 63. Give talks.
+Learning to give good presentations is very important. One benefit of giving talks is that doing so advertises your work and makes sure people know who you are.
+Being well-known will pay off when you are looking for a job.
+
+### Networking
+
+#### 67. ⭐️ Tutorials
+Write tutorials/annotated bibliographies/technical notes. If they're good, this can be a highly effective way to make sure your name is known within your community. Think of all the tutorials you've read by well-known academics.
+
+#### 68. Big names.
+Know who the "big names" are in your area and follow their work closely.
+
+#### 71. Act professionally.
+Your actions reflect not only yourself, but also your lab and your advisor.
 
 
 # RESEARCH 101 FOR ENGINEERS by George A. Hazelrigg (National Science Foundation)
