@@ -341,3 +341,7 @@ https://www.deirdremccloskey.com/docs/pdf/Article_315.pdf
 
 Your job in graduate school, anyway, is to *overstand*; that is, to learn to think critically about pieces of computer science. Of course you still have to understand, to memorize, and to show up on time.
 But the biggest source of failure in graduate school is trying to apply the earlier techniques without the new element of criticism.
+
+*Hang out with the best faculty members.* I know I didn't, and regret it deeply.
+Hanging out with the best faculty means that *you must do what the faculty suggest.*
+The biggest difference between first-rate and second-rate grad students, I've discovered by acquaintance with lots of both kinds, is that the first-rate do what they are told to do by people (called "faculty") who know more than they do, whereas the second-rate are always substituting their necessarily defective judgment for that of their betters.
