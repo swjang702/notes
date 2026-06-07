@@ -345,3 +345,6 @@ But the biggest source of failure in graduate school is trying to apply the earl
 *Hang out with the best faculty members.* I know I didn't, and regret it deeply.
 Hanging out with the best faculty means that *you must do what the faculty suggest.*
 The biggest difference between first-rate and second-rate grad students, I've discovered by acquaintance with lots of both kinds, is that the first-rate do what they are told to do by people (called "faculty") who know more than they do, whereas the second-rate are always substituting their necessarily defective judgment for that of their betters.
+
+*Hang out with the best students.* The best students are the ones who are most crazily devoted to talking about computer science, morning, noon, and night.
+You are in the land of geeks, not the land of Greeks. Enjoy it and you'll learn a lot more.
