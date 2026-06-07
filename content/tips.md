@@ -330,11 +330,14 @@ If someone expresses an interest in your work, follow up! Send them email talkin
 
 Finding specific mentors can be very useful. Especially if you feel that you are isolated at your institution, having a colleague at another institution who can give you advice, feedback on drafts of papers, and suggestions for research directions can be extremely valuable.
 
-
 # Write Good Papers
 https://lemire.me/blog/rules-to-write-a-good-research-paper/
 
 ## What a good paper should contain
 - A sexy start: tell the reader early why he should read your paper. Don’t summarize, sell! A good abstract tells us **why we should read this paper**, it does not summarize the paper. Convince us early that your paper is important. For example, the Kent Beck recipe for a good 4-sentence abstract is: (1) state the problem (2) say why it is interesting (3) say what your solution achieves (4) say what follows from your solution.
 
+# How To Be a Good Graduate Student by Deirdre N. McCloskey
+https://www.deirdremccloskey.com/docs/pdf/Article_315.pdf
 
+Your job in graduate school, anyway, is to *overstand*; that is, to learn to think critically about pieces of computer science. Of course you still have to understand, to memorize, and to show up on time.
+But the biggest source of failure in graduate school is trying to apply the earlier techniques without the new element of criticism.
