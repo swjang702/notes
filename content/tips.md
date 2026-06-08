@@ -5,6 +5,7 @@
 - One tip not to lose your path to your research journey is to keep opening the plan document for being within your sight while you are doing other things.
 - The process from the running of experiments to the final creating tables or graphs should be one-shot triggered by like Makefile in Latex of your paper.
 - Build the one-shot research CI/CD pipeline.
+- 내가하는 모든 research process/action은 가능한 한 의미 있는 이유를 가지고 실행 되기를. 그렇게 실행된 결과는 정리/요약되어서 로그로 연구 일지에 기록 되기를. 그런 일지는 (모여서) research pipeline을 통해 최종 paper에 반영될 수 있는 상태가 항상 유지되기를.
 
 # How to Be a Successful PhD Student by Mark Dredze and Hanna M. Wallach
 
