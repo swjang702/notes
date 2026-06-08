@@ -373,3 +373,36 @@ The biggest difference between first-rate and second-rate grad students, I've di
 
 *Hang out with the best students.* The best students are the ones who are most crazily devoted to talking about computer science, morning, noon, and night.
 You are in the land of geeks, not the land of Greeks. Enjoy it and you'll learn a lot more.
+
+# ⭐️⭐️ Whitesides' Group: Writing a Paper by George M. Whitesides
+https://intra.ece.ucr.edu/~rlake/Whitesides_writing_res_paper.pdf
+
+## 1. What is a Scientific Paper?
+A paper is an organized description of hypotheses, data and conclusions, intended to instruct the reader.
+Papers are a central part of research. If your research does not generate papers, it might just as well not have been done. "Interesting and unpublished" is equivalent to "non-existent."
+
+**Realize that your objective in research is to formulate and test hypotheses, to draw conclusions from these tests, and to teach these conclusions to others. Your objective is not to "collect data."**
+
+A paper is not just an archival device for storing a completed research program; it is also a structure for *planning* your research in progress.
+If you clearly understand the purpose and form of a paper, it can be immensely useful to you in *organizing* and conducting your research.
+A good outline for the paper is also a good plan for the research program. You should write and rewrite these plans/outlines throughout the course of the research.
+At the beginning, you will have mostly plan; at the end, mostly outline.
+**The continuous effort to understand, analyze, summarize, and reformulate hypotheses on paper will be immensely more efficient for you than a process in which you collect data and only start to organize them when their collection is "complete".**
+
+## 2. Outlines
+### 2.1 The Reason for Outlines
+I emphasize the central place of an outline in writing papers, preparing seminars, and planning research.
+I especially believe that for you, and for me, it is most *efficient* to write papers from outlines.
+An *outline* is a written plan of the organization of a paper, *including* data on which it rests.
+**You should, in fact, think of an outline as a carefully organized and presented set of data, with attendant objectives, hypotheses, and conclusions, rather than an outline of text.**
+An outline itself contains little text. If you and I can agree on the details of the outline (that is, on the data and organization), the supporting text can be assembled fairly easily. If we do *not* agree on the outline, any text is useless.
+Much of the *time* in writing a paper goes into the text; most of the *thought* goes into the organization of the data and into the analysis.
+It can be relatively efficient in time to go through several (even many) cycles of an outline before beginning to write text; writing many versions of the full text of a paper is slow.
+
+All writing that I do---papers, reports, proposals (and, of course, slides for seminars)---I do from outlines. I urge you to learn how to use them as well.
+
+### 2.2 How Should You Construct an Outline?
+
+The classical approach is to start with a blank piece of paper, and write down, in any order, all important ideas that occur to you concerning the paper.
+Ask yourself the obvious questions: "Why did I do this work?"; "What does it mean?"; "What hypotheses did I mean to test?"; "What ones did I actually test?"; "What were the results? Did the work yield a new method of compound? What?"; "What measurements did I make?"; "What compounds? How were they characterized?".
+Sketch possible equations, figures, and schemes. It is essential to try to get the major ideas.
