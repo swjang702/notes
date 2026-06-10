@@ -410,3 +410,21 @@ All writing that I do---papers, reports, proposals (and, of course, slides for s
 The classical approach is to start with a blank piece of paper, and write down, in any order, all important ideas that occur to you concerning the paper.
 Ask yourself the obvious questions: "Why did I do this work?"; "What does it mean?"; "What hypotheses did I mean to test?"; "What ones did I actually test?"; "What were the results? Did the work yield a new method of compound? What?"; "What measurements did I make?"; "What compounds? How were they characterized?".
 Sketch possible equations, figures, and schemes. It is essential to try to get the major ideas.
+If you start the research to test one hypothesis, and decide, when you see what you have, that the data really seem to test some other hypothesis better, don't worry. Write them both down, and pick the best combinations of hypotheses, objectives, and data.
+Often the objectives of a paper when it is finished are different from those used to justify starting the work. Much of good science is opportunistic and revisionist.
+
+When you have written down what you can, start with another piece of paper and try to organize the jumble of the first one. Sort all of your ideas into three major heaps (1-3).
+
+*1. Introduction*
+
+Why did I do the work? What were the central motivations and hypotheses?
+
+*2. Results and Discussion*
+
+What were the results? How were compounds made and characterized? What was measured?
+
+*3. Conclusions*
+
+What does it all mean? What hypotheses were proved or disproved? What did I learn? Why does it make a difference?
+
+Next, take each of these sections, and organize it on yet finer scale.
