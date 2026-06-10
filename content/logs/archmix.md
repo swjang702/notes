@@ -15,8 +15,9 @@
 4. Figure out what those raw data mean and Abstract them.
 5. Build a relationship between the value from raw ones and the definition of ArchScore. i.e., mapping
 6. Build a simple equation.
-7. Collect data and Analyze it.
-8. Feedback Loop.
+7. Draw graphs that we want to know/see.
+8. Collect data and Analyze it.
+9. Feedback Loop.
 
 [20260610]
 - Definition of ArchScore:
