@@ -428,3 +428,14 @@ What were the results? How were compounds made and characterized? What was measu
 What does it all mean? What hypotheses were proved or disproved? What did I learn? Why does it make a difference?
 
 Next, take each of these sections, and organize it on yet finer scale.
+
+# The Craft of Research
+
+## PART 4 Writing Your Argument
+
+### 16 Introductions and Conclusions
+
+#### 16.6 Organizing the whole introduction
+
+All this may seem formulaic, but it's what readers expect. And when you master a rhetorical like this, you have more than a formula for writing.
+**You also have a tool for thinking.** To write a full statement of your shared context and problem, you have to think hard about what your readers know, what they don't, and, in particular, what they should know and why.
