@@ -214,3 +214,4 @@ reliance
 rouse
 utterly
 substituting A for B : B를 A로 대체하다.
+tranquillity
