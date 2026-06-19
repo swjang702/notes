@@ -83,3 +83,19 @@ Hao sun (ETH Zurich) (Best paper award)
 [25 RTSS] LEMIX: Unified Scheduling for LLM Training and Inference on Multi-GPU Systems
 (Outstanding Paper)
 
+# Abstract
+
+## [1]
+1. Introduce common system concept A with the subject B of this work.
+2. Introduce the common issue.
+3. Formulate the problem and map the issue into a scheduling problem.
+
+2. The motivation of core technique of the subject B.
+3. The problem of the core technique.
+4. Introduce the onshot-oneline of our work.
+5. Our Key insight.
+6. Design principle (How to solve) 1.
+7. Design principle (How to solve) 2.
+8. Consequently, How good our results are.
+9. Real-world evaluations and meaning(contribution) of this work.
+

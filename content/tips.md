@@ -436,7 +436,10 @@ This process can be slow---I may sketch a figure five to tne times in different 
 
 Finally, put everything---outline of sections, tables, sketches of figures, equations---in good order.
 
-When you are satisfied that you have included *all* the data (or that you know what additional data you intend to collect), and have a plausible organization, give the outline to me.
+When you are satisfied that you have included *all* the data (or that you know what additional data you intend to collect), and have a plausible organization, give the outline to me. Simply indicate where missing data will go, how you think (hypothesize) they will look, and how you will interpret them if you hypothesis is correct. I will take this outline, add my opinions, suggest changes, and return it to you. It usually takes four to five iterations (often with additional experiments) to agree on an outline.
+When we *have* agreed, the data are usually in (or close to) final form (that is, the tables, figures, etc., in the outline will be the tables, figures,... in the paper).
+
+**You can then start writing, with some assurance that much of your prose will be used.**
 
 # The Craft of Research
 
