@@ -441,6 +441,31 @@ When we *have* agreed, the data are usually in (or close to) final form (that is
 
 **You can then start writing, with some assurance that much of your prose will be used.**
 
+The key to efficient use of your and my time is that we start exchanging outlines and proposals as early in a project as possible.
+*Do not, under any circumstances, wait until the collection of data is "complete" before starting to write an outline.*
+No project is ever complete, and it saves enormous effort and much time to propose a plausible paper and outline as soon as you see the basic structure of a project. Even if we decide to do significant additional work before seriously organizing a paper, the effort of writing an outline will have helped to guide the research.
+
+### 2.3. The Outline
+
+What an outline should contain:
+
+*1. Title*
+
+*2. Authors*
+
+*3. Abstract*
+
+Do not write an abstract. That can be done when the paper is complete.
+
+*4. Instroduction*
+
+*5. Results and Discussion*
+
+*6. Conclusions*
+
+*7. Experimental*
+
+
 # The Craft of Research
 
 ## PART 4 Writing Your Argument
