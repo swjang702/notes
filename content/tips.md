@@ -489,6 +489,14 @@ It should add a new, higher level of analysis, and should indicate explicitly th
 
 *7. Experimental*
 
+Include, in the correct order to correspond to the order in the Results section, all of the paragraph subheadings of the Experimental section.
+
+### 2.4 In Summary
+
+- Start writing possible outlines for papers *early* in a project. Do not wait unil the "end". The ned may never come.
+- Organize the outline and the paper around easily assimilated data---tables, equations, figures, schemes---rather than around text.
+- Organize in order of importance, not in chronological order. An important detail in writing papers concerns the weight to be given to topics.
+
 
 # The Craft of Research
 
