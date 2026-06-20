@@ -463,10 +463,29 @@ The first paragraph or two should be written out completely. Pay particular atte
 In general, the Introduction should have these elements:
 - The *objectives* of the work.
 - The *justification* for these objectives: Why is the work important?
+- *Background*: Who else has done what? How? What have we done previously.
+- *Guidance to the reader*: What should the reader watch for in the paper? What are the interesting high points? What strategy did we use?
+- *Summary/conclusion*: What should the reader expect as conclusion? In advanced versions of the outline, you should also include all the sections that will go in the Experimental section (at the level of paragraph subheadings) and indicate what information will go in the Microfilm section.
 
 *5. Results and Discussion*
 
+The results and discussion are usually combined. This section should be organized according to major topics. The separate parts should have subheadings in boldface to make this organization clear, and to help the reader scan through the fiinal text to find the parts of interest.
+
+In the outline, do not write any significant amount of text, but get all the data in their proper place: Any text should simply indicate what will go in that section.
+- Section Headings
+- Figures (with captioins)
+- Schemes (with captions and footnotes)
+- Equations
+- Tables (correctly formatted)
+Remember to think of a paper as a collection of experimental results, summarized as clearly and economically as possible in figures, tables, equations, and schemes.
+The text in the paper serves just to explain the data, and is secondary. The more information can be compressed into tables, equations, etc., the shorter and more readable the paper will be.
+
 *6. Conclusions*
+
+In the outline, summarize the conclusions of the paper as a list of a short phrases or sentences.
+Do not repeat what is in the Results section, unless special emphasis is needed.
+The Conclusions section should be just that, and not a summary.
+It should add a new, higher level of analysis, and should indicate explicitly the significance of the work.
 
 *7. Experimental*
 
