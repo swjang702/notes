@@ -12,3 +12,4 @@
 # [26 arXiv Journal] TETRARL: A Self-Adaptive Runtime for On-Device Deep Reinforcement Learning Systems
 - Firstly, suggest an R4 optimization problem about on-device DRL.
 - Substantially couple prior two conference papers.
+- Use Multi-Objective Markov Decision Process (MOMDP).
