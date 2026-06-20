@@ -459,6 +459,11 @@ Do not write an abstract. That can be done when the paper is complete.
 
 *4. Instroduction*
 
+The first paragraph or two should be written out completely. Pay particular attention to the opening sentence. Ideally, it should state concisely the objective of the work, and indicate why this objective is important.
+In general, the Introduction should have these elements:
+- The *objectives* of the work.
+- The *justification* for these objectives: Why is the work important?
+
 *5. Results and Discussion*
 
 *6. Conclusions*
