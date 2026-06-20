@@ -8,3 +8,7 @@
 * A Comprehensive Overview of Large Language Models: The deployment of LLMs on homogeneous hardware can be further optimized in memory, throughput, and latency space by efficiently managing the KV cache.
 
 - They so resemble the OS: virtual memory's page table/swapping, shared libraries, FIFO(First-Come-First-Serve), and so forth.
+
+# [26 arXiv Journal] TETRARL: A Self-Adaptive Runtime for On-Device Deep Reinforcement Learning Systems
+- Firstly, suggest an R4 optimization problem about on-device DRL.
+- Substantially couple prior two conference papers.
