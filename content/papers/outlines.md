@@ -109,7 +109,17 @@ Hao sun (ETH Zurich) (Best paper award)
 ## [2] The problem E
 1. Specify the problem E.
 2. Finding Key insights(causes) about the E. (mapping the cause to familiar field(problem))
+3. Emprical observation on the problem E.
 
+## [3] The first Approach to the E
+1. Design
+2. Result
+
+## [4] Limitation of the first approach
+1. Key challenges (which might be improved in the second one)
+
+## [5] The second Approach
+1. Key goal
 
 /*--------------------------------------------------------*/
 
