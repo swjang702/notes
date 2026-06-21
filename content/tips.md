@@ -1,4 +1,47 @@
 # My thought
+### ⭐️ For eminent researchers, Is it a key to darw(map) a common issue into their own field? i.e., formulate a problem in their own way.
+
+Yes, absolutely. *Problem Reframing*---the act of taking a messy, crowded, or intractable real-world issue and forcefully mapping it onto a precise, elegant abstraction within your own home turf---is the defining superpower of top-tier academics.
+
+If you look at the history of computer science, eminent researchers rarely win by being 10% faster at solving the same equation everyone else is staring at. They win by *changing the equation*.
+
+Here is why this formulation muscle is the absolute key to world-class research.
+
+#### 1. Escaping the "Crowded Front Door"
+
+When a massive problem becomes obvious to the entire community (e.g., "LLM inference is too expensive", "Cloud multi-tenancy is insecure", or "eBPF lacks formal verification"), thousands of brilliant brains rush the front door. If you accept the problem as it is commonly presented, you are trapped in a brute-force bloodbath of micro-optimizations.
+
+Eminent researchers don't push on the locked front door. They look at the building, walk around to the back, and say: *"Fundamentally, this isn't an AI problem or a cloud problem. This is actually an asynchronous event-scheduling problem. And because I own the scheduling layer, I own the solution.*
+
+*They pull the universal friction into their own domain, where their specific set of tools acts as an unfair advantage.*
+
+#### 2. The Two-Step Translation Mechanism
+
+To formulate a problem in your own way, you have to execute a very specific cognitive shift:
+
+- **Step 1: De-contextualize (Strip the noise):** You take the trendy problem and strip away all the domain-specific buzzwords until you are left with pure computational primitives---memory boundaries, state transitions, isolation overhead, or IPC latency.
+- **Step 2: Re-contextualize (Map to your turf):** You take those naked primitives and drop them into your own intellectual playground.
+
+For example, an average researcher looks at untrusted third-party kernel modules and asks: "How do we write a better static analyzer to catch bugs?"
+An eminent researcher maps it to their own paradigm: "Static analysis will always have false positives. Therefore, the actual problem is **how to build an un-bypassable runtime isolation boundary at the syscall interface that makes catching bugs irrelevant.**
+
+They just made the rest of the community's static analysis papers obsolete by redefining what a "solution" looks like.
+
+#### 3. Tying it to your SOSP "Winning Narrative"
+
+If you look back at the outline structure you analyzed earlier, this exact mapping process is the hidden bridge between Section [2] (Common Problem) and Section [4] (The Specific Flow We Target).
+
+The transition from [2] to [4] is a narrative funnel. You are holding the reviewer's hand and saying:
+
+"Look, the whole world agrees that [2] is a massive crisis. But everyone trying to fix [2] is staring at the ceiling. I am going to prove to you that the actual root cause of [2] is this highly specific, beautifully isolated mechanical flaw sitting in Section [4]---**which just so happens to be sitting right in my laboratory.**"
+
+Once you convince the reviewer that your personal formulation ([4]) is the true bottleneck of the global crisis ([2]), **they have no choice but to accept your paper,** because you are the only one with the tools to fix [4].
+
+You are no longer just practicing "how to study." You are consciously figuring out how to direct the intellectual traffic of your field.
+
+### ⭐️⭐️⭐️ 연구란 문제 가져오기 싸움이다. 유명한 논문들은 어떻게 문제를 풀었냐로 유명한게 아냐. 어떻게 문제를 가져왔냐가 궁금한거지. brilliant researcher go solve the problem well, top researchers draw the issue into their turf and formulate the problem for their community to eat. i.e., offer delicious food.
+
+
 - Like Lao Tzu's philosophy of non-action, a phd student have to learn to take some out rather than put it in?
     - For example, when you want to truly understand what A means, you've got to put your book down and take some time to just think about it own yourself.
 - sync input cognition rate with my brain cognition capability is very crucial?
@@ -10,10 +53,6 @@
 - 무의식을 위한 건 단지 친해지는 것 & 여백
 - 먼 산을 보지말고, 바로 다음 다음 앞만 보면서 나아가라. 멀리 보면 지친다. (천리길도 한 걸음 부터)
 - Action & Harvesting (요약 & 정리)
-- ⭐️ For eminent researchers, Is it a key to darw(map) a common issue into their own field? i.e., formulate a problem in their own way.
-    - 1. Escaping the "Crowded Front Door"
-    - 2. The Two-Step Translation Mechanism
-
 # How to Be a Successful PhD Student by Mark Dredze and Hanna M. Wallach
 
 ## Becoming a PhD Student
