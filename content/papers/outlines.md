@@ -111,6 +111,8 @@ Hao sun (ETH Zurich) (Best paper award)
 2. Finding Key insights(causes) about the E. (mapping the cause to familiar field(problem))
 3. Emprical observation on the problem E.
 
+/*--------------------------------------------------------*/
+
 ## [3] The first Approach to the E
 1. Design
 2. Result
@@ -121,7 +123,12 @@ Hao sun (ETH Zurich) (Best paper award)
 ## [5] The second Approach
 1. Key goal
 
-/*--------------------------------------------------------*/
+## [6] Details of the second one
+1. How to solve
+2. Result and meaning
+
+## [7] Contributions
+
 
 
 
