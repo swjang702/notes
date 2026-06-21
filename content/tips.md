@@ -600,6 +600,31 @@ Not:
 But:
     formation of ATP; product of the reaction
 
+- The word "this" must always be followed by a noun, so that its reference is explicit.
+Not:
+    This is a fast reaction; This leads us to conclude
+But:
+    This reaction is fast; This observation leads us to conclude
+
+- Describe experimental results uniformly in the past tense.
+Not:
+    Addition of water *gives* product.
+But:
+    Addition of water *gave* product.
+
+- Use the active voice whenever possible.
+Not:
+    It was observed that the solution turned red.
+But:
+    The solution turned red. *or*
+    We observed that the solution turned red.
+
+- Complete all comparisons.
+Not:
+    The yield was higher using bromine.
+But:
+    The yield was higher using bromine than chlorine.
+
 
 # The Craft of Research
 
