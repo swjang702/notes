@@ -10,6 +10,9 @@
 - 무의식을 위한 건 단지 친해지는 것 & 여백
 - 먼 산을 보지말고, 바로 다음 다음 앞만 보면서 나아가라. 멀리 보면 지친다. (천리길도 한 걸음 부터)
 - Action & Harvesting (요약 & 정리)
+- ⭐️ For eminent researchers, Is it a key to darw(map) a common issue into their own field? i.e., formulate a problem in their own way.
+    - 1. Escaping the "Crowded Front Door"
+    - 2. The Two-Step Translation Mechanism
 
 # How to Be a Successful PhD Student by Mark Dredze and Hanna M. Wallach
 
