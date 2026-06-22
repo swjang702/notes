@@ -91,6 +91,7 @@ You are no longer just practicing "how to study." You are consciously figuring o
 
 방금 제안해 드린 '신성한 3대 무기(관찰의 Lens, 격리의 Wall, 인터페이스의 Bridge)' 중에서, 현재 선우님이 *"이론적으로는 머리에 대충 떠오르는데, 내 손끝으로 직접 코드를 통제해 본 적은 없어서 9월 전에 꼭 완전히 씹어 먹고 싶다"*고 느끼는 가장 갈증 나는 영역은 어디인가요?
 
+---
 
 - Like Lao Tzu's philosophy of non-action, a phd student have to learn to take some out rather than put it in?
     - For example, when you want to truly understand what A means, you've got to put your book down and take some time to just think about it own yourself.
