@@ -25,8 +25,10 @@ const config: QuartzConfig = {
       typography: {
         //header: "Schibsted Grotesk",
         //body: "Source Sans Pro",
-        header: "Alegreya Sans",
-        body: "Alegreya Sans",
+        // header: "Alegreya Sans",
+        // body: "Alegreya Sans",
+        header: "Merriweather Sans",
+        body: "Inter",
         code: "IBM Plex Mono",
       },
       colors: {
