@@ -1,5 +1,5 @@
 # My thought
-### ⭐️ For eminent researchers, Is it a key to darw(map) a common issue into their own field? i.e., formulate a problem in their own way.
+### ⭐️ For eminent researchers, Is it a key to draw(map) a common issue into their own field? i.e., formulate a problem in their own way.
 
 Yes, absolutely. *Problem Reframing*---the act of taking a messy, crowded, or intractable real-world issue and forcefully mapping it onto a precise, elegant abstraction within your own home turf---is the defining superpower of top-tier academics.
 
