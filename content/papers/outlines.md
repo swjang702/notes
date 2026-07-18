@@ -144,5 +144,6 @@ Hao sun (ETH Zurich) (Best paper award)
 ## [7] Contributions
 
 
+[26 SOSP] Linux AGX: An Adaptive GPU eXtension to Linux Fair Scheduling for Physical AI and Robotic Systems
 
 

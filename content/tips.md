@@ -501,7 +501,7 @@ An *outline* is a written plan of the organization of a paper, *including* data 
 **You should, in fact, think of an outline as a carefully organized and presented set of data, with attendant objectives, hypotheses, and conclusions, rather than an outline of text.**
 An outline itself contains little text. If you and I can agree on the details of the outline (that is, on the data and organization), the supporting text can be assembled fairly easily. If we do *not* agree on the outline, any text is useless.
 Much of the *time* in writing a paper goes into the text; most of the *thought* goes into the organization of the data and into the analysis.
-It can be relatively efficient in time to go through several (even many) cycles of an outline before beginning to write text; writing many versions of the full text of a paper is slow.
+*It can be relatively efficient in time to go through several (even many) cycles of an outline before beginning to write text; writing many versions of the full text of a paper is slow.*
 
 All writing that I do---papers, reports, proposals (and, of course, slides for seminars)---I do from outlines. I urge you to learn how to use them as well.
 
