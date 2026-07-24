@@ -78,6 +78,9 @@ From the manpages, the number of sched syscalls is only fifteen.
           param(2).
 ```
 
+In my test code, I confirmed three syscalls, *getpriority, setpriority, and sched_getscheduler*.
+Fun fact is a scheduler policy is set per pid. what does it mean? All tasks run in its own policy?
+
 
 ## Tests
 
