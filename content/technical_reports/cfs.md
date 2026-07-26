@@ -285,7 +285,8 @@ Lastly, let us look at sched.h a moment
 2345 }
 ```
 
-Wow, here some useful static inline functions. And also we confirm that out hypothesis is true, which is about the moment scheduling context equals execution context.
+Good. Thankfully, this is the second proof of our assumption that rq->curr is the current running task.
+Moreover, here some useful static inline functions. And also we confirm that out hypothesis is true, which is about the moment scheduling context equals execution context. Currently, we don't know what it means exactly, but it might be a pitfall later.
 
 
 ## Tests
