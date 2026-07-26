@@ -104,6 +104,10 @@ You are no longer just practicing "how to study." You are consciously figuring o
 - 무의식을 위한 건 단지 친해지는 것 & 여백
 - 먼 산을 보지말고, 바로 다음 다음 앞만 보면서 나아가라. 멀리 보면 지친다. (천리길도 한 걸음 부터)
 - Action & Harvesting (요약 & 정리)
+- 80% & active and deliberate input (not foolish brute force)
+
+
+
 # How to Be a Successful PhD Student by Mark Dredze and Hanna M. Wallach
 
 ## Becoming a PhD Student
