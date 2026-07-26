@@ -541,7 +541,7 @@ When we *have* agreed, the data are usually in (or close to) final form (that is
 
 **You can then start writing, with some assurance that much of your prose will be used.**
 
-The key to efficient use of your and my time is that we start exchanging outlines and proposals as early in a project as possible.
+**The key to efficient use of your and my time is that we start exchanging outlines and proposals as early in a project as possible.**
 *Do not, under any circumstances, wait until the collection of data is "complete" before starting to write an outline.*
 No project is ever complete, and it saves enormous effort and much time to propose a plausible paper and outline as soon as you see the basic structure of a project. Even if we decide to do significant additional work before seriously organizing a paper, the effort of writing an outline will have helped to guide the research.
 
