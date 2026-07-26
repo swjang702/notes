@@ -573,7 +573,7 @@ The results and discussion are usually combined. This section should be organize
 
 In the outline, do not write any significant amount of text, but get all the data in their proper place: Any text should simply indicate what will go in that section.
 - Section Headings
-- Figures (with captioins)
+- Figures (with captions)
 - Schemes (with captions and footnotes)
 - Equations
 - Tables (correctly formatted)
