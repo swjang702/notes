@@ -316,7 +316,9 @@ I write a simple C code to learn usage of all sched-related syscalls. Also, to c
 
 ## References
 [1] Arpaci-Dusseau, Remzi H., and Andrea C. Arpaci-Dusseau. Operating systems: Three easy pieces. Vol. 1. Madison, WI, USA: Arpaci-Dusseau Books, LLC, 2018.
-[2] LLC 2025 - Linux scheduler overview and update, by Linus Walleij
-https://youtu.be/T9Q7HrQwz2I?si=LH3v3JuMgB2QpZh8
+
+[2] [LLC 2025 - Linux scheduler overview and update, by Linus Walleij](https://youtu.be/T9Q7HrQwz2I?si=LH3v3JuMgB2QpZh8)
+
 [3] https://docs.kernel.org/scheduler/sched-design-CFS.html
+
 [4] Bouron, Justinien, Sebastien Chevalley, Baptiste Lepers, Willy Zwaenepoel, Redha Gouicem, Julia Lawall, Gilles Muller, and Julien Sopena. "The battle of the schedulers:{FreeBSD}{ULE} vs. linux {CFS}." In 2018 USENIX Annual Technical Conference (USENIX ATC 18), pp. 85-96. 2018.
