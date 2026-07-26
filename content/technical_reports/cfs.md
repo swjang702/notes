@@ -21,10 +21,12 @@
 
 ## Concept
 A task in Linux scheduler is a runnable thread.
+The main idea of Linux Complete Fair Scheduler is that
 
 
 ### Syscalls Sched
-From the manpages, the number of sched syscalls is only fifteen.
+The reason that syscalls is the first part is that I want to look first at interface between user space and kernel space. Also, it is easy to test.
+From the manpages, the number of sched syscalls is only fifteen. Some are subsumption.
 ```bash
    nice(2)
           Set a new nice value for the calling thread, and return the new nice value.
