@@ -9,9 +9,9 @@
 
 
 ## What I want to know
-- entrypoint (e.g., runqueue, cpu)
-- what is the unit of a task?
-- How to know current running task process owning CPU.
+~~- entrypoint (e.g., runqueue, cpu)~~
+~~- what is the unit of a task?~~
+~~- How to know current running task process owning CPU.~~
 - What about multi-core processor?
 - What is vruntime?
 
@@ -81,6 +81,125 @@ From the manpages, the number of sched syscalls is only fifteen.
 In my test code, I confirmed three syscalls, *getpriority, setpriority, and sched_getscheduler*.
 Fun fact is a scheduler policy is set per pid. what does it mean? All tasks run in its own policy?
 
+### Entrypoint in the kernel
+Where is an entrypoint of scheduling operation in the linux kernel?
+Scheduling is initiated by timer interrupt. The timer interrupt calls *sched_tick()* (*scheduler_tick()* in order version) to prepare a next scheduling task, which calculates load average, updates a runqueue, calls resched_curr(rq), delegate to sched_class->task_tick(), and so on.
+In short, as `sched_tick()` is the entry point of Linux scheduling, it doesn't work about real scheduling policy but preprocess for it.
+
+*/kernel/sched/core.c*
+```bash
+/*
+ * This function gets called by the timer code, with HZ frequency.
+ * We call it with interrupts disabled.
+ */
+void sched_tick(void)
+{
+	int cpu = smp_processor_id();
+	struct rq *rq = cpu_rq(cpu);
+	/* accounting goes to the donor task */
+	struct task_struct *donor;
+
+    ...
+
+	if (dynamic_preempt_lazy() && tif_test_bit(TIF_NEED_RESCHED_LAZY))
+		resched_curr(rq);
+}
+```
+
+The next question can be how to know current running task process owning CPU. We can find the answer on the same code.
+The `sched_tick()` uses task_struct \*donor variable. In the code, it gets a cpu id from smp_processor_id(), and acquire a runqueue pointer `*rq` from cpu_rq(cpu), and finally the donor set by
+`donor = rq->donor;`
+From this code, we can know that each cpu has its own runqueue which has a member donor being used in preprocessing of scheduling in interrupt context for a next run task.
+Yeap, we learn about the donor task in runqueue. If so, the donor is the current running task in the cpu?
+To confirm it, see this code.
+
+*/kernel/sched/sched.h*
+```bash
+/*
+ * This is the main, per-CPU runqueue data structure.
+ *
+ * Locking rule: those places that want to lock multiple runqueues
+ * (such as the load balancing or the thread migration code), lock
+ * acquire operations must be ordered by ascending &runqueue.
+ */
+struct rq {
+    ...
+	union {
+		struct task_struct __rcu *donor; /* Scheduler context */
+		struct task_struct __rcu *curr;  /* Execution context */
+	};
+    ...
+}
+```
+
+In this, we find that donor is the task! but in scheduler context. We are finding the current **running** task. In a execution context, it looks be `curr` task.
+Let us prove it with this command
+`linux-6.19.8/kernel/sched$ rg -n 'rq->curr' fair.c core.c sched.h`
+Got it! There are some interesting lines.
+
+```bash
+core.c
+1104:	struct task_struct *curr = rq->curr;
+
+fair.c
+717:	struct sched_entity *curr = cfs_rq->curr;
+1243:		struct task_struct *running = rq->curr;
+
+sched.h
+2322: * rq->curr == rq->donor == p.
+```
+
+From this, we now learn that there is a time that rq->curr equals rq->donor, which would be an intersection between Scheduler context and Execution context. And cfs implements its own runqueue cfs_rq and uses struct sched_entity for the curr task.
+We wonder which functions call those line.
+
+```bash
+core.c
+ 1095 /*
+ 1096  * resched_curr - mark rq's current task 'to be rescheduled now'.
+ 1097  *
+ 1098  * On UP this means the setting of the need_resched flag, on SMP it
+ 1099  * might also involve a cross-CPU call to trigger the scheduler on
+ 1100  * the target CPU.
+ 1101  */
+ 1102 static void __resched_curr(struct rq *rq, int tif)
+ 1103 {
+ 1104     struct task_struct *curr = rq->curr;
+ 1105     struct thread_info *cti = task_thread_info(curr);
+```
+
+Got ya! Nice to see you again `resched_curr()`! Do you remember this code mentioned earlier in `sched_tick()`? Let's see carefully. The comment and the code say that `rq->curr` is the rq`s current task. Is it enough to be proved? I would yes and keep taking a look other points.
+What the function works is just setting a bit, tif.
+And it looks a moment when the current task will be switched to an waiting task in rq. i.e., to be rescheduled.
+
+Let's take a look another code in fair.c and sched.h.
+
+```bash
+fair.c
+ 1231 static s64 update_se(struct rq *rq, struct sched_entity *se)
+ 1232 {
+ 1233     u64 now = rq_clock_task(rq);
+ 1234     s64 delta_exec;
+ 1235
+ 1236     delta_exec = now - se->exec_start;
+ 1237     if (unlikely(delta_exec <= 0))
+ 1238         return delta_exec;
+ 1239
+ 1240     se->exec_start = now;
+ 1241     if (entity_is_task(se)) {
+ 1242         struct task_struct *donor = task_of(se);
+ 1243         struct task_struct *running = rq->curr;
+ 1244         /*
+ 1245          * If se is a task, we account the time against the running
+ 1246          * task, as w/ proxy-exec they may not be the same.
+ 1247          */
+ 1248         running->se.exec_start = now;
+ 1249         running->se.sum_exec_runtime += delta_exec;
+```
+
+First of all, from this, we know that sched_entity can not be a task!
+Second, a current time of rq is acquired by `rq_clock_task(rq)`.
+
+
 
 ## Tests
 
@@ -105,3 +224,11 @@ I write a simple C code to learn usage of all sched-related syscalls. Also, to c
 
 
 ## Conclusions
+
+
+## References
+[1] Arpaci-Dusseau, Remzi H., and Andrea C. Arpaci-Dusseau. Operating systems: Three easy pieces. Vol. 1. Madison, WI, USA: Arpaci-Dusseau Books, LLC, 2018.
+[2] LLC 2025 - Linux scheduler overview and update, by Linus Walleij
+https://youtu.be/T9Q7HrQwz2I?si=LH3v3JuMgB2QpZh8
+[3] https://docs.kernel.org/scheduler/sched-design-CFS.html
+[4] Bouron, Justinien, Sebastien Chevalley, Baptiste Lepers, Willy Zwaenepoel, Redha Gouicem, Julia Lawall, Gilles Muller, and Julien Sopena. "The battle of the schedulers:{FreeBSD}{ULE} vs. linux {CFS}." In 2018 USENIX Annual Technical Conference (USENIX ATC 18), pp. 85-96. 2018.
