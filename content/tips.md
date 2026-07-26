@@ -532,7 +532,7 @@ What were the results? How were compounds made and characterized? What was measu
 What does it all mean? What hypotheses were proved or disproved? What did I learn? Why does it make a difference?
 
 Next, take each of these sections, and organize it on yet finer scale. Concentrate on organizing the *data*. Construct figures, tables, and schemes to present the data as clearly and compactly as possible.
-This process can be slow---I may sketch a figure five to tne times in different ways trying to decide how it is most clear (and looks best aesthetically).
+This process can be slow---I may sketch a figure five to ten times in different ways trying to decide how it is most clear (and looks best aesthetically).
 
 Finally, put everything---outline of sections, tables, sketches of figures, equations---in good order.
 
