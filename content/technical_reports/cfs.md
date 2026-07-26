@@ -13,7 +13,8 @@
 ~~- what is the unit of a task?~~
 ~~- How to know current running task process owning CPU.~~
 - What about multi-core processor?
-- What is vruntime?
+- What is vruntime? How to calculate it?
+- What is weight? How to calculate it?
 
 
 ## Hypotheses
