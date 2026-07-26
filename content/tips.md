@@ -593,7 +593,7 @@ Include, in the correct order to correspond to the order in the Results section,
 
 ### 2.4 In Summary
 
-- Start writing possible outlines for papers *early* in a project. Do not wait unil the "end". The ned may never come.
+- Start writing possible outlines for papers *early* in a project. Do not wait unil the "end". The end may never come.
 - Organize the outline and the paper around easily assimilated data---tables, equations, figures, schemes---rather than around text.
 - Organize in order of importance, not in chronological order. An important detail in writing papers concerns the weight to be given to topics.
 Neophytes often organize a paper in terms of chronology: that is, they give a recitation of their experimental program, starting with their cherished initial failures and leading up to a climactic successful finale.
