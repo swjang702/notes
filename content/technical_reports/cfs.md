@@ -199,6 +199,93 @@ fair.c
 First of all, from this, we know that sched_entity can not be a task!
 Second, a current time of rq is acquired by `rq_clock_task(rq)`.
 
+```bash
+fair.c
+  703 /*
+  704  * Specifically: avg_vruntime() + 0 must result in entity_eligible() := true
+  705  * For this to be so, the result of this function must have a left bias.
+  706  *
+  707  * Called in:
+  708  *  - place_entity()      -- before enqueue
+  709  *  - update_entity_lag() -- before dequeue
+  710  *  - entity_tick()
+  711  *
+  712  * This means it is one entry 'behind' but that puts it close enough to where
+  713  * the bound on entity_key() is at most two lag bounds.
+  714  */
+  715 u64 avg_vruntime(struct cfs_rq *cfs_rq)
+  716 {
+  717     struct sched_entity *curr = cfs_rq->curr;
+  718     long weight = cfs_rq->sum_weight;
+  719     s64 delta = 0;
+  720
+  721     if (curr && !curr->on_rq)
+  722         curr = NULL;
+  723
+  724     if (weight) {
+  725         s64 runtime = cfs_rq->sum_w_vruntime;
+  726
+  727         if (curr) {
+  728             unsigned long w = scale_load_down(curr->load.weight);
+  729
+  730             runtime += entity_key(cfs_rq, curr) * w;
+  731             weight += w;
+  732         }
+  733
+  734         /* sign flips effective floor / ceiling */
+  735         if (runtime < 0)
+  736             runtime -= (weight - 1);
+  737
+  738         delta = div_s64(runtime, weight);
+  739     } else if (curr) {
+```
+
+Wow, we happen to reach out a sort of vruntime stuff!
+Through skimming, it's about EEVDF due to eligible and lag mentions. And also, it's about some calculating stuff. Probably weight and vruntime. Let's take a look closely later in an EEVDF note.
+And we see that EEVDF actually built on existing CFS infrastructure.
+
+Lastly, let us look at sched.h a moment
+
+```bash
+2310 /*
+2311  * Is p the current execution context?
+2312  */
+2313 static inline int task_current(struct rq *rq, struct task_struct *p)
+2314 {
+2315     return rq->curr == p;
+2316 }
+2317
+2318 /*
+2319  * Is p the current scheduling context?
+2320  *
+2321  * Note that it might be the current execution context at the same time if
+2322  * rq->curr == rq->donor == p.
+2323  */
+2324 static inline int task_current_donor(struct rq *rq, struct task_struct *p)
+2325 {
+2326     return rq->donor == p;
+2327 }
+2328
+2329 static inline bool task_is_blocked(struct task_struct *p)
+2330 {
+2331     if (!sched_proxy_exec())
+2332         return false;
+2333
+2334     return !!p->blocked_on;
+2335 }
+2336
+2337 static inline int task_on_cpu(struct rq *rq, struct task_struct *p)
+2338 {
+2339     return p->on_cpu;
+2340 }
+2341
+2342 static inline int task_on_rq_queued(struct task_struct *p)
+2343 {
+2344     return READ_ONCE(p->on_rq) == TASK_ON_RQ_QUEUED;
+2345 }
+```
+
+Wow, here some useful static inline functions. And also we confirm that out hypothesis is true, which is about the moment scheduling context equals execution context.
 
 
 ## Tests
