@@ -291,6 +291,106 @@ Lastly, let us look at sched.h a moment
 Good. Thankfully, this is the second proof of our assumption that rq->curr is the current running task.
 Moreover, here some useful static inline functions. And also we confirm that out hypothesis is true, which is about the moment scheduling context equals execution context. Currently, we don't know what it means exactly, but it might be a pitfall later.
 
+### Sched_class method
+
+!![NEED TO ADD]
+
+```bash
+13975 /*
+13976  * All the scheduling class methods:
+13977  */
+13978 DEFINE_SCHED_CLASS(fair) = {
+13979
+13980     .queue_mask     = 2,
+13981
+13982     .enqueue_task       = enqueue_task_fair,
+13983     .dequeue_task       = dequeue_task_fair,
+13984     .yield_task     = yield_task_fair,
+13985     .yield_to_task      = yield_to_task_fair,
+13986
+13987     .wakeup_preempt     = check_preempt_wakeup_fair,
+13988
+13989     .pick_task      = pick_task_fair,
+13990     .pick_next_task     = pick_next_task_fair,
+13991     .put_prev_task      = put_prev_task_fair,
+13992     .set_next_task          = set_next_task_fair,
+13993
+13994     .select_task_rq     = select_task_rq_fair,
+13995     .migrate_task_rq    = migrate_task_rq_fair,
+13996
+13997     .rq_online      = rq_online_fair,
+13998     .rq_offline     = rq_offline_fair,
+13999
+14000     .task_dead      = task_dead_fair,
+14001     .set_cpus_allowed   = set_cpus_allowed_fair,
+14002
+14003     .task_tick      = task_tick_fair,
+14004     .task_fork      = task_fork_fair,
+14005
+14006     .reweight_task      = reweight_task_fair,
+14007     .prio_changed       = prio_changed_fair,
+14008     .switching_from     = switching_from_fair,
+14009     .switched_from      = switched_from_fair,
+14010     .switched_to        = switched_to_fair,
+14011
+14012     .get_rr_interval    = get_rr_interval_fair,
+14013
+14014     .update_curr        = update_curr_fair,
+```
+
+```bash
+ 1282 /*
+ 1283  * Update the current task's runtime statistics.
+ 1284  */
+ 1285 static void update_curr(struct cfs_rq *cfs_rq)
+ 1286 {
+ 1287     /*
+ 1288      * Note: cfs_rq->curr corresponds to the task picked to
+ 1289      * run (ie: rq->donor.se) which due to proxy-exec may
+ 1290      * not necessarily be the actual task running
+ 1291      * (rq->curr.se). This is easy to confuse!
+ 1292      */
+ 1293     struct sched_entity *curr = cfs_rq->curr;
+ 1294     struct rq *rq = rq_of(cfs_rq);
+ 1295     s64 delta_exec;
+ 1296     bool resched;
+ 1297
+ 1298     if (unlikely(!curr))
+ 1299         return;
+ 1300
+ 1301     delta_exec = update_se(rq, curr);
+ 1302     if (unlikely(delta_exec <= 0))
+ 1303         return;
+ 1304
+ 1305     curr->vruntime += calc_delta_fair(delta_exec, curr);
+ 1306     resched = update_deadline(cfs_rq, curr);
+ 1307
+ 1308     if (entity_is_task(curr)) {
+ 1309         /*
+ 1310          * If the fair_server is active, we need to account for the
+ 1311          * fair_server time whether or not the task is running on
+ 1312          * behalf of fair_server or not:
+ 1313          *  - If the task is running on behalf of fair_server, we need
+ 1314          *    to limit its time based on the assigned runtime.
+ 1315          *  - Fair task that runs outside of fair_server should account
+ 1316          *    against fair_server such that it can account for this time
+ 1317          *    and possibly avoid running this period.
+ 1318          */
+ 1319         dl_server_update(&rq->fair_server, delta_exec);
+ 1320     }
+ 1321
+ 1322     account_cfs_rq_runtime(cfs_rq, delta_exec);
+ 1323
+ 1324     if (cfs_rq->nr_queued == 1)
+ 1325         return;
+ 1326
+ 1327     if (resched || !protect_slice(curr)) {
+ 1328         resched_curr_lazy(rq);
+ 1329         clear_buddies(cfs_rq, curr);
+ 1330     }
+ 1331 }
+```
+
 
 ## Tests
 
