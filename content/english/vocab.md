@@ -217,3 +217,4 @@ substituting A for B : B를 A로 대체하다.
 tranquillity
 unswerving
 relinquish
+alongside theoreical/analytical results on why they should work.
