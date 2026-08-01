@@ -293,7 +293,7 @@ Moreover, here some useful static inline functions. And also we confirm that out
 
 ### Sched_class method
 
-!![NEED TO ADD]
+Let's take a look at fair sched class methods.
 
 ```bash
 13975 /*
@@ -337,6 +337,9 @@ Moreover, here some useful static inline functions. And also we confirm that out
 14013
 14014     .update_curr        = update_curr_fair,
 ```
+
+I want to pick the last one update_curr, which updates task's sched info.
+It is called when reweighting, enqueue_entity, dequeue_entity, entity_tick, pick_task, yield_task, etc.
 
 ```bash
  1282 /*
@@ -390,6 +393,8 @@ Moreover, here some useful static inline functions. And also we confirm that out
  1330     }
  1331 }
 ```
+
+It accounts the vruntime of the curr task, updates deadline.
 
 
 ## Tests
