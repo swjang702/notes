@@ -5,5 +5,5 @@
 The paper indicates that the inherent ROS 2's multi-layered architecture increases unpredictability of scheduling in real-time system such as safety-critical application.
 To address this, they propose an novel priority propagation system across multi layers for ROS 2.
 Also, they define four key principles to ensure to prevent priority inversion, and prove them formally.
-The results show that CROS-RT dominates in predictability of inter-process communication comparing with vanilla ROS 2 and Preempt-RT.
+The results demonstrate that CROS-RT dominates in predictability of inter-process communication comparing with vanilla ROS 2 and Preempt-RT.
 Moreover, they provide some in-depth analysis including E2E response time, overhead of the model, chain length, and so forth.
