@@ -603,6 +603,9 @@ The reader usually does not care how you arrived at your big results, only what 
 
 # The Craft of Research
 
+## Preface
+**Central in every chapter is the advice to side with your readers, to imagine how they will judge what you have written.**
+
 ## PART 4 Writing Your Argument
 
 ### 16 Introductions and Conclusions
