@@ -606,6 +606,9 @@ The reader usually does not care how you arrived at your big results, only what 
 ## Preface
 **Central in every chapter is the advice to side with your readers, to imagine how they will judge what you have written.**
 
+## Prologue
+You'll discover both how new knowledge depends on what questions you ask and how the way you think about and communicate your research shapes those questions and your answers.
+
 ## PART 4 Writing Your Argument
 
 ### 16 Introductions and Conclusions
