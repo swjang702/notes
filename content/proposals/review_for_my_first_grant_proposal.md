@@ -20,7 +20,7 @@ Deductive chains are like:
 
 ## Things I think were good (strengths)
 1. Try outlining.
-2. Divide & Conquer the outline: several md files and a show_all.sh script to see all at once in order with `glow`.
+2. Divide & Conquer the outline: several md files and a show_all.sh script to see all at once in order with `glow`. (Next time, more focus on pyramid structure?)
 3. Reuse previous essays. e.g., SOP, proposals. Because that part is also where I'm not very good at. I believe reusing something of yours reflect how much you love yours. Love your work is very important to create a high quality results. Also it would affect your brain and memory. So love your work and try to reuse previous one you made. If you feel you are not satisfied with yours, just try to refine it. That is going to be a revision. I have to quote this *"Often the objectives of a paper when it is finished are different from those used to justify starting the work. Much of good science is opportunistic and revisionist."* [2]
 
 Here is my curiosity. How much text can people hold in their heads at once while writing? For me, it would be up to three paragraphs so far. I wonder how do other people think about this.
