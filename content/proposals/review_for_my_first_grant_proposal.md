@@ -28,6 +28,7 @@ Here is my curiosity. How much text can people hold in their heads at once while
 ## TL;DR
 So, the cornerstones for good research to me are to more study & research and to practice writing & outlining.
 What they are mixed in? It can be
+- to side with my readers
 - to sum a paper up
 - to write a technical report
 
