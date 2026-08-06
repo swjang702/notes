@@ -12,7 +12,7 @@ What do you regret?
 4. Should've been reviewed more the outline rigorously.
 5. My short knowledge on my research topic (NEED TO STUDY!).
 6. Less experiences of writing a proposal in English (I think it's okay. inevitable. good one step)
-7. Didn't think about readers who will read my proposal
+7. Didn't side with my readers who will read my proposal.
 
 Deductive chains are like:
 - 5 (short knowledge) -> 2 (short research) -> 1 (absence of results expected)
