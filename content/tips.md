@@ -577,8 +577,8 @@ In the outline, do not write any significant amount of text, but get all the dat
 - Schemes (with captions and footnotes)
 - Equations
 - Tables (correctly formatted)
-Remember to think of a paper as a collection of experimental results, summarized as clearly and economically as possible in figures, tables, equations, and schemes.
-The text in the paper serves just to explain the data, and is secondary. The more information can be compressed into tables, equations, etc., the shorter and more readable the paper will be.
+**Remember to think of a paper as a collection of experimental results, summarized as clearly and economically as possible in figures, tables, equations, and schemes.
+The text in the paper serves just to explain the data, and is secondary.** The more information can be compressed into tables, equations, etc., the shorter and more readable the paper will be.
 
 *6. Conclusions*
 
