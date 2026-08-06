@@ -606,8 +606,13 @@ The reader usually does not care how you arrived at your big results, only what 
 ## Preface
 **Central in every chapter is the advice to side with your readers, to imagine how they will judge what you have written.**
 
-## Prologue
+## PART 1 Research, Researchers, and Readers
+### Prologue
 You'll discover both how new knowledge depends on what questions you ask and how the way you think about and communicate your research shapes those questions and your answers.
+
+### 1 Thinking in Print
+#### 1.1 WHAT IS RESEARCH?
+In the broadest terms, we do research whenever we gather information to answer a question that solves a problem.
 
 ## PART 4 Writing Your Argument
 
