@@ -613,6 +613,14 @@ You'll discover both how new knowledge depends on what questions you ask and how
 ### 1 Thinking in Print
 #### 1.1 WHAT IS RESEARCH?
 In the broadest terms, we do research whenever we gather information to answer a question that solves a problem.
+#### 1.2 WHY WRITE IT UP?
+1.2.1 Write to Remember
+
+Experienced researchers first write just to remember what they've read.
+
+1.2.2 Write to Understand
+
+1.2.3 Write to Test Your Thinking
 
 ## PART 4 Writing Your Argument
 
