@@ -39,7 +39,8 @@ Once you convince the reviewer that your personal formulation ([4]) is the true 
 
 You are no longer just practicing "how to study." You are consciously figuring out how to direct the intellectual traffic of your field.
 
-### ⭐️⭐️⭐️ 연구란 문제 가져오기 싸움이다. 유명한 논문들은 어떻게 문제를 풀었냐로 유명한게 아냐. 어떻게 문제를 가져왔냐가 궁금한거지. brilliant researcher go solve the problem well, top researchers draw the issue into their turf and formulate the problem for their community to eat. i.e., offer delicious food.
+### ⭐️⭐️⭐️ 연구란 문제 가져오기 싸움이다. 유명한 논문들은 어떻게 문제를 풀었냐로 유명한게 아냐. 어떻게 문제를 가져왔냐가 궁금한거지. Brilliant researcher go solve the problem well, Top researchers draw the issue into their turf and formulate the problem for their community to eat. i.e., offer delicious food.
+#### ⭐️ Value of a research = Why is the work important + its justification.
 
 ### 좋아. I got the sense. 근데 그렇다면 일단 나만의 tool과 내가 강한 background를 만드는것도 필요하겠지?? 예를 들면 os fundamental을 공부한다던지, linux kernel, system programming. ? isolation. , 등등? 어떻게 생각해? 문제를 가져오는게 top key 이긴 하지만. 
 
