@@ -108,6 +108,12 @@ You are no longer just practicing "how to study." You are consciously figuring o
 - 먼 산을 보지말고, 바로 다음 다음 앞만 보면서 나아가라. 멀리 보면 지친다. (천리길도 한 걸음 부터)
 - Action & Harvesting (요약 & 정리)
 - 80% & active and deliberate input (not foolish brute force)
+- How to read a paper:
+    - 1. Read Abstract
+    - 2. Write down an short summary you got
+    - 3. Write down your curiosity about their contention and results
+    - 4. Find out data to be able to answer to your questions and try to understand it really.
+    - 5. If you feel read more, and then read a paper.
 
 
 ---
