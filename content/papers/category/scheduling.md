@@ -13,5 +13,22 @@ Well, a naive observation following Soheil's work: when the ROS 2 executor dispa
 A callback whose short CPU segment gates a GPU launch is ordered by the same period- or registration-based rules as ordinary CPU-only callbacks, so a non-preemptive housekeeping callback can run ahead of a millisecond-scale GPU-feeding callback while the GPU sits idle. If the executor does not dispatch such feeder callbacks in time, no kernel-level mechanism, whether EEVDF or AGX, can help: the kernel's scheduling entity is the executor thread, and the callback ordering inside that thread is invisible to it. AGX can bring the executor thread onto the CPU promptly, but if the executor then spends that time on a housekeeping callback first, the kernel-level boost is simply wasted one layer down. Making the ROS 2 executor's dispatch policy aware of this distinction is therefore not just an optimization but the only layer where this gap can be closed, which leaves clear room for improvement.
 
 
+# [26 SOSP] Linux AGX: An Adaptive GPU eXtension to Linux Fair Scheduling for Physical AI and Robotic Systems
+### Summary
+The key insight is that short CPU preparation time gates GPU launch in Linux.
+As Linux default fair scheduler cannot aware of GPU tasks or a critical-path, the CPU time slice often is put off, which makes GPU idle.
+This especially is vital in ML-driven robotic pipelines.
+Therefore, they present AGX (Adaptive GPU eXtension) Linux simple extension which reweight scheduler to be GPU-, dependent-, adapt-aware leveraging userspace profiling.
+It reduces meaningfully GPU idle time and completion time of a task in a robotic system.
+
+### Deep Dive into Data
+- What does it mean exactly?
+- Why is it important?
+- Why do they present the data?
+#### My curiosity
+
+#### Answer Data
+
+
 # [26 SOSP] Scheduling Linux Threads under I/O Chiplet Wall Using cSwitch
 !! [NEED TO READ]
