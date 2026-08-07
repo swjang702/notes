@@ -94,6 +94,7 @@ You are no longer just practicing "how to study." You are consciously figuring o
 
 ---
 
+#### 입력이 빠를수록 우리의 뇌는 마비되어 사고하는 능력을 잃어버린다. (e.g, llm, 한마디로tv쌤 한 단어씩 추론하기) 그렇다면 반대로 사고의 능력과 속도를 향상시키려면? 입력을 제한하는 연습을 하면 되겠지? 그리고 추론.
 - Like Lao Tzu's philosophy of non-action, a phd student have to learn to take some out rather than put it in?
     - For example, when you want to truly understand what A means, you've got to put your book down and take some time to just think about it own yourself.
 - sync input cognition rate with my brain cognition capability is very crucial?
@@ -622,6 +623,8 @@ Experienced researchers first write just to remember what they've read.
 1.2.2 Write to Understand
 
 1.2.3 Write to Test Your Thinking
+
+#### 1.4 WRITING IS THINKING
 
 ## PART 4 Writing Your Argument
 
