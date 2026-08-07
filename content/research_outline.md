@@ -41,11 +41,11 @@ Test to do     ◄──── Data (to prove)
 
 
 ## Reference to the number of data
-* [26 SOSP] Linux AGX: 11 of Figures, 7 of Equations, 1 of Algorithm, 1 of Table (Total 20)
-    - Figures: Overview, Design Architecture, Motivation, 2 of comparisons, overhead analysis, 2 of sensitivity analysis, validation
-* [23 SOSP] vLLM: 19 of Figures, 4 of Equations, 1 of Table (Total 24)
-    - Figures: Motivation, Overview, 7 of examples&descriptions, 8 of comparisons, ablation analysis, overhead analysis
-* [25 SOSP] Prove it to the Kernel: 9 of Listings, 8 of Figures, 3 of Tables (Total 20)
-* [25 OSDI] Power Never corrupt: 6 of Listings, 4 of Figures, 3 of Tables (Total 13)
-* [24 SOSP] Modular Verification by Nickolai Zeldovich: 12 of Figures, 5 of Tables (Total 17)
-* [24 SOSP] SigmaOS by MIT CSAIL: 11 of Figures, 4 of Tables (Total 15)
+* [26 SOSP] Linux AGX: 11 Figures, 7 Equations, 1 Algorithm, 1 Table (Total 20)
+    - Figures: Overview, Design Architecture, Motivation, 2 comparisons, overhead analysis, 2 sensitivity analysis, validation
+* [23 SOSP] vLLM: 19 Figures, 4 Equations, 1 Table (Total 24)
+    - Figures: Motivation, Overview, 7 examples&descriptions, 8 comparisons, ablation analysis, overhead analysis
+* [25 SOSP] Prove it to the Kernel: 9 Listings, 8 Figures, 3 Tables (Total 20)
+* [25 OSDI] Power Never corrupt: 6 Listings, 4 Figures, 3 Tables (Total 13)
+* [24 SOSP] Modular Verification by Nickolai Zeldovich: 12 Figures, 5 Tables (Total 17)
+* [24 SOSP] SigmaOS by MIT CSAIL: 11 Figures, 4 Tables (Total 15)
