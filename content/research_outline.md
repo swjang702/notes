@@ -6,15 +6,15 @@
 * Motivation can be a broad view of the inductive reasoning behind the questions.
 
 ## Overview
-```                                                                           
+```
                      Phenomenon                                            
                          │                                                 
-      Related Work ◄─────┤                                                 
-      & Background       ▼                                                 
+                         │                                                 
+                         ▼                                                 
                      Questions ──────────────► Motivation                  
                          │                     (Value of a research        
-                         │                      = Why is the work important
-                         ▼                        + its justification)     
+  Related Work ◄─────────┤                      = Why is the work important
+  & Background           ▼                        + its justification)     
                      Insights (Hypotheses)                                 
                          │                                                 
                          │ How to prove ─────► Problems                    
@@ -26,6 +26,26 @@ Test to do     ◄──── Data (to prove)
                          │                                                 
                          │                                                 
                          ▼                                                 
-                     Conclusion                                           
+                     Conclusion                                            
                      (Answers)                                             
 ```
+
+### Data Distribution General
+* Phenomenon - Figure 1
+* Motivation - Figure 1
+* Overview   - Figure 1
+* Comparison - Figure 3~4
+* Validation - Figure 3~4
+* Overhead   - Figure 1
+* Ablation   - (Figure 1 or Talbe 1)
+
+
+## Reference to the number of data
+* [26 SOSP] Linux AGX: 11 of Figures, 7 of Equations, 1 of Algorithm, 1 of Table (Total 20)
+    - Figures: Overview, Design Architecture, Motivation, 2 of comparisons, overhead analysis, 2 of sensitivity analysis, validation
+* [23 SOSP] vLLM: 19 of Figures, 4 of Equations, 1 of Table (Total 24)
+    - Figures: Motivation, Overview, 7 of examples&descriptions, 8 of comparisons, ablation analysis, overhead analysis
+* [25 SOSP] Prove it to the Kernel: 9 of Listings, 8 of Figures, 3 of Tables (Total 20)
+* [25 OSDI] Power Never corrupt: 6 of Listings, 4 of Figures, 3 of Tables (Total 13)
+* [24 SOSP] Modular Verification by Nickolai Zeldovich: 12 of Figures, 5 of Tables (Total 17)
+* [24 SOSP] SigmaOS by MIT CSAIL: 11 of Figures, 4 of Tables (Total 15)
