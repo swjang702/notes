@@ -94,10 +94,11 @@ You are no longer just practicing "how to study." You are consciously figuring o
 
 ---
 
-#### 입력이 빠를수록 우리의 뇌는 마비되어 사고하는 능력을 잃어버린다. (e.g, llm, 한마디로tv쌤 한 단어씩 추론하기) 그렇다면 반대로 사고의 능력과 속도를 향상시키려면? 입력을 제한하는 연습을 하면 되겠지? 그리고 추론.
+#### Limit input, Think slowly: 입력이 빠를수록 우리의 뇌는 마비되어 사고하는 능력을 잃어버린다. (e.g, llm, 한마디로tv쌤 한 단어씩 추론하기) 그렇다면 반대로 사고의 능력과 속도를 향상시키려면? 입력을 제한하는 연습을 하면 되겠지? 그리고 추론.
 - Like Lao Tzu's philosophy of non-action, a phd student have to learn to take some out rather than put it in?
     - For example, when you want to truly understand what A means, you've got to put your book down and take some time to just think about it own yourself.
 - sync input cognition rate with my brain cognition capability is very crucial?
+
 - One tip not to lose your path to your research journey is to keep opening the plan document for being within your sight while you are doing other things.
 - The process from the running of experiments to the final creating tables or graphs should be one-shot triggered by like Makefile in Latex of your paper.
 - Build an Outline and the one-shot research CI/CD pipeline.
@@ -108,6 +109,8 @@ You are no longer just practicing "how to study." You are consciously figuring o
 - Action & Harvesting (요약 & 정리)
 - 80% & active and deliberate input (not foolish brute force)
 
+
+---
 
 
 # How to Be a Successful PhD Student by Mark Dredze and Hanna M. Wallach
