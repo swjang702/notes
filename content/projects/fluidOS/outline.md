@@ -30,12 +30,12 @@ Test to do     ◄──── Data (to prove)
                      (Answers)                                             
 ```
 
-### Data Distribution General
+### Data Distribution
 * Phenomenon - Figure 1
-* Motivation - Figure 1
-* Overview   - Figure 1
-* Comparison - Figure 3~4
-* Validation - Figure 3~4
+* Motivation - Figure 2
+* Overview   - Figure 2
+* Comparison - Figure 4
+* Validation - Figure 3
 * Overhead   - Figure 1
-* Ablation   - (Figure 1 or Talbe 1)
+* Ablation   - Talbe 1
 

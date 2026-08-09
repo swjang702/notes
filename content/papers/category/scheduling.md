@@ -25,10 +25,30 @@ It reduces meaningfully GPU idle time and completion time of a task in a robotic
 - What does it mean exactly?
 - Why is it important?
 - Why do they present the data?
-#### My curiosity
-
-#### Answer Data
+#### My curiosity (questions)
+- How much does AGX reduce makespan?
+- How much does AGX increase GPU utilization?
+    - Figure 6. Overall performance of schedulers. (The first data in the evaluation section)
+        - Metrics: three
+        - workload targeting: seven
+        - the number of comparison (Five Baselines): six
+        - the number of computing platforms: three
+        - My comment: I think good points are two. One is many variables to test and the second one is applying to the other research result, DREAM (ASPLOS'23), which is about application-level scheduler. And most of data are plausible.
+- How much is overhead of AGX?
+    - Figure 8. Overhead analysis and component breakdown.
+- What does dependency graph consist of?
+- How does short CPU preparation time gate GPU launch?
+- How much does the CPU preparation time interfere GPU utilization?
+    - Figure 9. DAG critical-path sensitivity
+- How many does AGX support vendors?
+    - Just shown as testbed, three platforms.
+- What does weighting scheme look like?
 
 
 # [26 SOSP] Scheduling Linux Threads under I/O Chiplet Wall Using cSwitch
-!! [NEED TO READ]
+!! [NEED TO UPDATE]
+
+
+# [23 ASPLOS] Dream: A dynamic scheduler for dynamic real-time multi-model ml workloads
+!! [NEED TO UPDATE]
+

@@ -635,6 +635,13 @@ Experienced researchers first write just to remember what they've read.
 
 #### 1.4 WRITING IS THINKING
 
+## PART 2 Asking Questions, Finding Answers
+### Prologue Planning Your Project
+Resolve to do lots of writing along the way. Much of it will be routine note-taking, but you should also write reflectively, to understand: make outlines; explain why you disagree with a source; draw diagrams to connect disparate facts; summarize sources, positions, and schools; record even random thoughts.
+Many researchers find it useful to keep a journal for hunches, new ideas, randome thoughts, problems, and so on.
+You might not include much of this writing-to-discover-and-understand in your final draft.
+But when you *write as you go, every day,* you encourage your own best critical thinking, understand your sources better, and, when the time comes, draft more productively.
+
 ## PART 4 Writing Your Argument
 
 ### 16 Introductions and Conclusions

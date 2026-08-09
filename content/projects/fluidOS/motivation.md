@@ -1,0 +1,2 @@
+- The reason why intelligent robots act slow to an urgent event is related with systems not how intelligent a robot is.
+- Current OS such as Linux on which most robotic systems run never designed for them.
