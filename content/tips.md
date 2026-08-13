@@ -114,6 +114,7 @@ You are no longer just practicing "how to study." You are consciously figuring o
     - 3. Write down your curiosity about their contention and results
     - 4. Find out data to be able to answer to your questions and try to understand it really.
     - 5. If you feel read more, and then read a paper.
+- Quality of research comes from your interest, quality of paper comes from reasoning.
 
 
 ---
@@ -641,6 +642,11 @@ Resolve to do lots of writing along the way. Much of it will be routine note-tak
 Many researchers find it useful to keep a journal for hunches, new ideas, randome thoughts, problems, and so on.
 You might not include much of this writing-to-discover-and-understand in your final draft.
 But when you *write as you go, every day,* you encourage your own best critical thinking, understand your sources better, and, when the time comes, draft more productively.
+
+#### 3.1 FROM AN INTEREST TO A TOPIC
+If you can work on any topic, we offer only a cliche: start with what most interests you.
+Nothing contributes to the quality of your work more than your commitment to it.
+But also ask yourself: *What interests me about this topic? What would interest others?*
 
 ## PART 4 Writing Your Argument
 

@@ -13,3 +13,7 @@ As Linux default fair scheduler cannot aware of GPU tasks or a critical-path, th
 This especially is vital in ML-driven robotic pipelines.
 Therefore, they present AGX (Adaptive GPU eXtension) Linux simple extension which reweight scheduler to be GPU-, dependent-, adapt-aware leveraging userspace profiling.
 It reduces meaningfully GPU idle time and completion time of a task in a robotic system.
+
+### Stoica, Ion, Hussein Abdel-Wahab, Kevin Jeffay, Sanjoy K. Baruah, Johannes E. Gehrke, and C. Greg Plaxton. "A proportional share resource allocation algorithm for real-time, time-shared systems." In 17th IEEE Real-Time Systems Symposium, pp. 288-299. IEEE, 1996.
+
+### Devi, UmaMaheswari C., and James H. Anderson. "Tardiness bounds under global EDF scheduling on a multiprocessor." Real-Time Systems 38, no. 2 (2008): 133-189.
