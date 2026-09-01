@@ -89,7 +89,7 @@ Where is an entrypoint of scheduling operation in the linux kernel?
 Scheduling is initiated by timer interrupt. The timer interrupt calls *sched_tick()* (*scheduler_tick()* in order version) to prepare a next scheduling task, which calculates load average, updates a runqueue, calls resched_curr(rq), delegate to sched_class->task_tick(), and so on.
 In short, as `sched_tick()` is the entry point of Linux scheduling, it doesn't work about real scheduling policy but preprocess for it.
 
-*/kernel/sched/core.c*
+*/kernel/sched/core.c v7.2*
 ```bash
 /*
  * This function gets called by the timer code, with HZ frequency.
@@ -168,9 +168,41 @@ core.c
  1103 {
  1104     struct task_struct *curr = rq->curr;
  1105     struct thread_info *cti = task_thread_info(curr);
+        int cpu;
+
+        lockdep_assert_rq_held(rq);
+
+        /*
+         * Always immediately preempt the idle task; no point in delaying doing
+         * actual work.
+         */
+        if (is_idle_task(curr) && tif == TIF_NEED_RESCHED_LAZY)
+            tif = TIF_NEED_RESCHED;
+
+        if (cti->flags & ((1 << tif) | _TIF_NEED_RESCHED))
+            return;
+
+        cpu = cpu_of(rq);
+
+        trace_sched_set_need_resched_tp(curr, cpu, tif);
+        if (cpu == smp_processor_id()) {
+            set_ti_thread_flag(cti, tif);
+            if (tif == TIF_NEED_RESCHED)
+                set_preempt_need_resched();
+            return;
+        }
+
+        if (set_nr_and_not_polling(cti, tif)) {
+            if (tif == TIF_NEED_RESCHED)
+                smp_send_reschedule(cpu);
+        } else {
+            trace_sched_wake_idle_without_ipi(cpu);
+        }
+     }
 ```
 
-Got ya! Nice to see you again `resched_curr()`! Do you remember this code mentioned earlier in `sched_tick()`? Let's see carefully. The comment and the code say that `rq->curr` is the rq`s current task. Is it enough to be proved? I would yes and keep taking a look other points.
+Got ya! Nice to see you again `resched_curr()`! Do you remember this code mentioned earlier in `sched_tick()`? Let's see carefully. The comment and the code say that `rq->curr` is the rq\`s current task.
+Is it enough to be proved? I would yes and keep taking a look other points.
 What the function works is just setting a bit, tif.
 And it looks a moment when the current task will be switched to an waiting task in rq. i.e., to be rescheduled.
 
