@@ -116,6 +116,14 @@ You are no longer just practicing "how to study." You are consciously figuring o
     - 5. If you feel read more, and then read a paper.
 - Quality of research comes from your interest, quality of paper comes from reasoning.
 
+# ⭐️ Pracktical Research Productivity Strategy
+- S      M             T       W T      F         S      (A week)
+  Rest : Think(Plan) : Input : Output : Analyze : Sum up (Get a data)
+   1   :     1       :   1   :   2    :    1    :   1
+         Hypothesis                     Proof
+         Write a tempalte                         Complete a micro paper with the data
+
+- For a large project, repeat the whole like fractal so that I do research in agile cycle.
 
 ---
 
