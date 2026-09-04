@@ -6,7 +6,7 @@
 사람들은 새로 온 사람에게 동네 꿀팁을 알려주는 것을 아주 좋아합니다. 본인의 라이프스타일과 관련된 질문을 던지며 자연스럽게 대화를 유도해 보세요.
 
 - 아침 루틴을 주제로: "I just got here a few weeks ago. I usually like to read at a cafe in the mornings. Are there any good coffee shops around campus that you'd recommend?"
-- 운동/취미를 주제로: "I'm trying to set up my workout routine here. Do you guys know any decent boxing gyms or good running routes nearby?"
+- 운동/취미를 주제로: "I'm trying to set up my workout routine here. Do you guys go to the recreation center or a gym?"
 
 # 2. 역질문으로 공 넘기기 (The 'Echo' Technique)
 내 소개를 들은 랩 멤버들이 "산업체 경험이 많네", "오, 로보틱스 OS 재미있겠다" 같은 리액션을 보일 때, 짧게 대답하고 바로 상대방에 대한 질문으로 넘기세요.
@@ -17,8 +17,52 @@
 # 3. 날씨와 환경 (절대 실패하지 않는 미국식 스몰토크)
 캘리포니아에 갓 도착한 상황은 완벽한 스몰토크 소재입니다.
 
-- "I'm still adjusting to the weather here. It's definitely different from Korea, but I'm loving the sunshine."
+- "I'm still adjusting to the weather here. It's quite silmilar to summer in Korea but a slightly different. but I'm loving the sunshine."
 
 
 마인드셋 팁:
 스몰토크 중에 완벽한 문장을 구사할 필요는 전혀 없습니다. 상대방이 추천해 준 카페나 체육관 이름을 듣고 "Oh, I should definitely check that out. Thanks!" 하고 끄덕이는 것만으로도 이미 훌륭한 대화가 성립됩니다.
+
+
+---
+
+
+Because your introduction touches on a few highly interesting transition points—shifting research fields, moving from industry back to academia, and relocating from South Korea—your lab members and advisor will likely use those exact points to spark conversation.
+
+Here are the most probable follow-up questions you can expect, along with strategies on how to field them.
+
+**1. The "Research Pivot" Questions**
+Your shift from container security to robotics systems is the most intriguing academic hook in your introduction.
+
+* **What they might ask:** "What sparked your interest in moving from container security to robotics OS?" or "Are there specific robotics platforms or physical AI systems you want to look into?"
+* **How to answer:** Prepare a brief, 2-to-3 sentence "origin story." You don't need a fully formed thesis idea yet. You can simply say something like, "While working on system-level security, I realized that physical AI and robotics present entirely new scheduling and isolation challenges, which made me want to dive deeper into that intersection."
+
+**2. The "Industry Experience" Questions**
+Ph.D. students who have actual industry experience are highly valued in systems labs because they know how to write production-level code and debug complex systems.
+
+* **What they might ask:** "What kind of embedded or cloud systems were you working on?" or "Why did you decide to leave industry and come back for a Ph.D.?"
+* **How to answer:** Keep it grounded and concrete. Mention specific tools or environments you worked with (e.g., Linux kernel drivers, eBPF tracing, or benchmarking). When answering why you returned to academia, frame it positively around your desire to focus deeply on solving fundamental OS problems rather than just building products.
+
+**3. The "Relocation and Lifestyle" Questions (Small Talk)**
+Since you just arrived in late August, this is where the natural icebreakers will happen.
+
+* **What they might ask:** "When did you fly in?" "Have you found a place to live yet?" or "How are you adjusting to the weather/time zone?"
+* **How to answer:** This is the perfect moment to deploy the "Newcomer" card you prepared. Answer briefly ("I got to Riverside a couple of weeks ago and just finished setting up my apartment...") and immediately throw the ball back to them ("...I'm actually looking for a good gym/cafe nearby, do you have any favorites?").
+
+You don't need to script out perfect answers for these—just having the general ideas in your "L1 Cache" will prevent you from freezing up.
+
+When you think about that first question regarding your pivot to robotics and physical AI, what is the core reason you usually give for wanting to make that shift?
+
+
+---
+
+# Questions
+
+## 요즘 뭐하고 있어?
+- What have you been up to lately?
+- What have you been doing lately?
+- What have you been working on lately?
+- What are you up to these days?
+- What are you working on these days?
+- What are you doing these days?
+

@@ -30,8 +30,7 @@ It reduces meaningfully GPU idle time and completion time of a task in a robotic
 - How much does AGX reduce makespan?
 - How much does AGX increase GPU utilization?
     - Figure 6. Overall performance of schedulers. (The first data in the evaluation section)
-        - Metrics: three
-        - workload targeting: seven
+        - Metrics: three - workload targeting: seven
         - the number of comparison (Five Baselines): six
         - the number of computing platforms: three
         - My comment: I think good points are two. One is many variables to test and the second one is applying to the other research result, DREAM (ASPLOS'23), which is about application-level scheduler. And most of data are plausible.
@@ -52,4 +51,18 @@ It reduces meaningfully GPU idle time and completion time of a task in a robotic
 
 # [23 ASPLOS] Dream: A dynamic scheduler for dynamic real-time multi-model ml workloads
 !! [NEED TO UPDATE]
+
+
+# [95] Earliest Eligible Virtual Deadline First : A Flexible and Accurate Mechanism for Proportional Share Resource Allocation
+!! [NEED TO UPDATE]
+
+
+# [08 RTS] Tardiness bounds under global EDF scheduling on a multiprocessor
+- Food is Multiprocessor
+- Nife is scheduler
+- How to handle is tardineess
+
+
+
+
 

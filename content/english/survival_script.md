@@ -9,3 +9,7 @@
 
 # Key 놓고 나왔을 때
 - I locked myself out of my room.
+
+# 인사 관련
+- What have you been up to? (워러빈 업투?)
+- What have you been doing? (워러뷰 빈 doing?)

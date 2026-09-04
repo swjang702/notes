@@ -338,7 +338,7 @@ Delip Rao suggests: _"Never read the original paper on X first. Instead read sev
     - forward references: see who else has cited the work
 - has someone else already listed the right papers for you?
 - breadth-first exploration
-    - read a lot of absracts
+    - read a lot of abstracts
 - when the going gets tough, switch to background reading
 
 # Professor Il Kon Kim
