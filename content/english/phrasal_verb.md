@@ -7,3 +7,5 @@
     - A thought keeps creeping in.
 - Have you come up with anything?
 - jump out at somebody
+- resign oneself to something : accept something unpleasant because you don't think you can change it.
+    e.g., I resigned myself to working late.

@@ -53,11 +53,11 @@ It needs the one number each produces: u_i(t) from events, and a recomputation c
 
 ### Algorithm
 **Assumption**
-i. There is a kind of *urgency* property within OS.
+i. There is a kind of *urgency* property within OS, which might be invisible now.
 
 **Premise**
 i.   A physical event emergent triggers an interrupt.
-ii.  Urgency propagates from interrupt to other resources.
+ii.  *Urgency propagates* from interrupt to other resources.
      is equivalent to
      The result of it is that other resources such as CPU scheduling, GPU execution, memory are affected
      at once (by that urgency).

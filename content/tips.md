@@ -94,6 +94,53 @@ You are no longer just practicing "how to study." You are consciously figuring o
 
 ---
 
+**10000% 괜찮습니다. 아니, 무조건 물어보셔야 합니다.**
+
+선우님, 혹시 아직도 마음속에 "내가 직접 머리를 쥐어뜯으며 며칠 밤을 새워야 진짜 내 지식이 되는 거 아닐까?" 하는 한국식 '수험생 마인드'가 남아있나요? 
+
+그 마인드는 오늘부로 태평양에 던져버리세요. 박사 과정은 정해진 답을 찾는 '수능 시험'이 아닙니다. **누가 더 빨리 기존 지식을 흡수해서, 새로운 지식(연구)을 만들어내느냐의 싸움**입니다.
+
+이해 안 되는 부분을 AI에게 물어보는 건 부정행위나 나태함이 아니라, **현대 연구자의 가장 강력한 무기**입니다. 선우님의 지도교수님이신 Cong Liu 교수님도 분명히 이메일에서 *"please use Google and AI tools"*라고 공식적으로 허락(?) 하셨잖아요!
+
+AI를 **'나만의 1대1 개인 과외 선생님'**으로 200% 활용해서 진짜 내 지식으로 만드는 3가지 황금 프롬프트(질문법)를 알려드릴게요.
+
+---
+
+이해 안되는 부분을 ai에게 물어보는건 괜찮을까.?
+----->
+### 🎓 1. "비유(Analogy)"를 요청하세요 (가장 추천)
+EEVDF 논문이나 스케줄러 코드를 보면 온갖 수식과 추상적인 개념(Virtual run time, lag, eligibility 등)이 나옵니다. 이걸 텍스트 그대로 이해하려고 하면 뇌에 안 들어옵니다.
+
+*   🗣️ **선우님:** "I'm reading the EEVDF scheduler paper. I don't understand the concept of 'lag'. **Could you explain it using a real-world analogy, like waiting in line at a grocery store or a restaurant?**"
+    *(EEVDF에서 'lag' 개념이 이해 안 가. 마트 계산대 줄 서기나 식당 대기열 같은 현실 세계 비유를 들어서 설명해 줄래?)*
+*   👉 **효과:** 복잡한 커널 로직이 갑자기 우리 동네 스타벅스 대기열 상황으로 변하면서, 1초 만에 "아하!" 하고 직관적으로 이해됩니다.
+
+### 🧩 2. 수식이나 문단을 "한 줄씩 쪼개 달라고" 하세요
+논문을 읽다 보면 한 문단이 10줄이 넘어가고, 수식이 갑자기 튀어나와서 숨이 턱 막힐 때가 있죠.
+
+*   🗣️ **선우님:** "I don't understand the following paragraph from the paper: [논문 내용 복붙]. **Please break it down into 3 simple bullet points for a CS undergraduate.**"
+    *(이 문단이 이해 안 가. 컴퓨터공학 학부생이 이해할 수 있게 아주 쉬운 3개의 핵심 요약으로 쪼개서 설명해 줘.)*
+*   👉 **효과:** AI가 쓸데없는 미사여구를 다 걷어내고 뼈대만 보여줍니다. 뼈대를 이해하고 다시 원본 논문을 보면 그제야 영어가 눈에 들어옵니다.
+
+### 🤺 3. 내가 이해한 게 맞는지 "검증(Verification)" 받으세요
+이게 AI를 써서 바보가 되지 않고 천재가 되는 가장 완벽한 방법입니다.
+
+*   🗣️ **선우님:** "Based on my understanding, the Linux CFS scheduler does [A], but EEVDF does [B] to solve the latency issue. **Is my understanding correct? If I am wrong or missing something, please point it out and correct me.**"
+    *(내가 이해하기로는 CFS는 A를 하는데, EEVDF는 지연시간 문제를 해결하려고 B를 하는 것 같아. 내 이해가 맞아? 틀렸거나 놓친 게 있으면 날카롭게 지적해 줘.)*
+*   👉 **효과:** 능동적인 학습의 끝판왕입니다. 선우님의 뇌를 거친 생각을 AI가 교정해 주기 때문에, 지식이 뇌에 가장 깊게 각인됩니다.
+
+
+선우님, 지금 캘리포니아 리버사이드는 **수요일 오전 11시를 향해 가고 있네요!**
+
+오늘 오전 내내 책상에 앉아서 안 읽히는 논문과 씨름하느라 자존감이 깎이고 멘탈이 지치셨을 겁니다. 
+지금 당장 챗GPT나 Claude를 켜세요. 그리고 아까 10분 동안 봐도 이해 안 되던 그 문단을 긁어다 붙여놓고 **"이거 5살짜리한테 설명하듯 쉽게 설명해 봐!"**라고 시키세요.
+
+AI가 10초 만에 설명해 주는 걸 보고 나면, *"아... 이걸 내가 왜 혼자 끙끙대고 있었지?"* 하면서 헛웃음이 나실 겁니다. 
+
+질문하는 걸 부끄러워하지 마세요. 선우님 주머니 속에는 전 세계 모든 커널 지식을 다 외우고 있는 천재 포닥 선배(AI)가 24시간 대기 중입니다. 맘껏 부려 먹고 뽑아 먹으십시오! 점심 맛있게 드세요! 🍔🇺🇸
+
+---
+
 #### Limit input, Think slowly: 입력이 빠를수록 우리의 뇌는 마비되어 사고하는 능력을 잃어버린다. (e.g, llm, 한마디로tv쌤 한 단어씩 추론하기) 그렇다면 반대로 사고의 능력과 속도를 향상시키려면? 입력을 제한하는 연습을 하면 되겠지? 그리고 추론.
 - Like Lao Tzu's philosophy of non-action, a phd student have to learn to take some out rather than put it in?
     - For example, when you want to truly understand what A means, you've got to put your book down and take some time to just think about it own yourself.
@@ -122,6 +169,7 @@ You are no longer just practicing "how to study." You are consciously figuring o
    1   :     1       :   1   :   2    :    1    :   1
          Hypothesis                     Proof
          Write a tempalte                         Complete a micro paper with the data
+         Set up the data I want to get
 
 - For a large project, repeat the whole like fractal so that I do research in agile cycle.
 

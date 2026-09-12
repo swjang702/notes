@@ -1,0 +1,3 @@
+- It's nice to finally meet you.
+- Have you two met? (두 분 인사하셨어요?)
+- Do you mind if I join you? (합석해도 될까요?)

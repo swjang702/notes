@@ -2,7 +2,7 @@
 
 ## Prologue
 * All work must be intended and be under the outline.
-* Data & How to show better than writing.
+* Data & How to show are better than writing.
 * Motivation can be a broad view of the inductive reasoning behind the questions.
 
 ## Overview
@@ -38,4 +38,5 @@ Test to do     ◄──── Data (to prove)
 * Validation - Figure 3
 * Overhead   - Figure 1
 * Ablation   - Talbe 1
+* + Equations
 

@@ -123,3 +123,84 @@ https://en.wikipedia.org/wiki/List_of_Germanic_and_Latinate_equivalents_in_Engli
 https://en.wikipedia.org/wiki/List_of_English_words_with_dual_French_and_Old_English_variations
 
 
+-------------------
+
+# ⭐️ Islam Makhachev's English
+
+Yes — I think your impression is pretty accurate. **Islam Makhachev's English sounds fluent, but the language itself is relatively simple.**
+
+I'd separate **fluency** from **complexity**:
+
+| Aspect                         | Makhachev's English                       |
+| ------------------------------ | ----------------------------------------- |
+| Grammar                        | Simple → generally accurate               |
+| Vocabulary                     | Mostly common, everyday words             |
+| Sentence structure             | Short and straightforward                 |
+| Fluency                        | Quite good                                |
+| Pronunciation                  | Strong Russian accent, but understandable |
+| Ability to communicate         | Very good                                 |
+| Sophisticated/academic English | Not really the point                      |
+
+For example, he often says things in a structure like:
+
+> **"I think he is a good fighter. He has good wrestling, good striking. But I think I am better."**
+
+That's **simple English**, but it's effective.
+
+He doesn't need:
+
+> "I believe his stylistic versatility presents a particularly interesting challenge..."
+
+😂
+
+Instead:
+
+> **"He's dangerous. I have to be careful."**
+
+That's actually a really useful kind of English for you to study.
+
+### One important distinction
+
+**Simple English ≠ poor English.**
+
+Someone can speak:
+
+> "I don't think that's gonna work. We have to do something different."
+
+and sound **very fluent**, even though there's almost no sophisticated vocabulary.
+
+Fluency is more about:
+
+* producing speech without constantly stopping
+* knowing what you want to say
+* using familiar words quickly
+* connecting sentences naturally
+* understanding the other person
+* responding appropriately
+
+rather than using difficult words.
+
+---
+
+### And I think Makhachev could actually be a good listening model for you
+
+Especially because you're trying to improve **real conversational English**, not academic vocabulary.
+
+His interviews tend to have:
+
+**simple grammar + repeated vocabulary + clear ideas + natural speech**
+
+For example, if you hear:
+
+> "I don't know. Maybe next fight. We will see. Right now I just want to rest."
+
+You don't need to decode complicated grammar. You're training your brain to recognize **spoken chunks automatically**.
+
+This is very different from reading an academic paper.
+
+So I wouldn't necessarily imitate his **accent**, but I'd absolutely imitate his **principle**:
+
+> **Say simple things quickly and naturally rather than trying to construct sophisticated sentences.**
+
+That's actually a very good target for your current English speaking/listening development.
+
