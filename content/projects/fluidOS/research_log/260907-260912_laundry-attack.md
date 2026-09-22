@@ -37,7 +37,8 @@ term rides along) is the honest heavy-tail posture, per Devi–Anderson's x + ek
 | IRQ hook2 | |  |
 | IRQ hook3 | |  |
 
-* no-delay-dequeue
+* tested on no-delay-dequeue feature
+
 Q) why is not sum of lag zero?
 
 - A lag debt of the pseudo laundering attack ?
@@ -51,8 +52,6 @@ Q) why is not sum of lag zero?
 | 60 | 514521 |
 
 -->> No lag debt observed.
-
-## Final prose
 
 
 # Think (Mon)
@@ -207,6 +206,7 @@ If you want, I can also show how task_numa_migrate() ties back into the load-bal
 # Output (Wed&Thr)
 - Trace
 - Write a psuedo laundering attack
+- sched-related tools:
     ```
     tool	controls
     ---
@@ -326,6 +326,40 @@ khugepaged,-136347523
 - Mem/IRQ operations associated with scheduling are not observed.
 - Using bpftrace, schbench, dd for test.
 
+## Final prose 📄
+We set a hypothesis that a laundering attack can beat EEVDF's fairness.
+In here, the laundering attack means incessant adversarial urgent signals. In other words, adversarial urgent signals may make lag debt of normal tasks.
+To prove this, we hook `dequeue_task_fair()` to get the vlag of sched_entity with bpftrace.
+We found out three.
+First of all, sum of vlags for a period time is not zero.
+Second, there is significant a difference of avg. vlag between benign and laundering attack.
+Last, more interestingly, we discover anomaly vlags that are over the limit as though EEVDF scheduler force task's lag clampped to a calculated value. In our experience, it is +-3.8M ns.
+
+### Proofreading
+🛠️ 주요 교정 포인트 (Vocabulary & Phrasing)
+- "beat EEVDF's fairness" ➔ "compromise / exploit / circumvent"
+'beat'는 약간 구어체입니다. 시스템 보안이나 스케줄러 논문에서는 보장성(guarantee)을 '무너뜨리거나(compromise)', '우회(circumvent)'한다고 표현하는 것이 더 묵직합니다.
+
+- "make lag debt" ➔ "induce / artificially accumulate"
+빚을 '만든다(make)'기보다는 비정상적으로 '유발(induce)'하거나 '누적(accumulate)'시킨다는 표현이 정확합니다.
+
+- "We found out three." ➔ "Our empirical analysis yields three key observations."
+매우 중요한 전환점입니다. "세 가지를 찾았다"보다 "경험적 분석(실험) 결과 세 가지 주요 관찰 결과를 얻었다"로 포장하면 훨씬 프로페셔널해 보입니다.
+
+- "as though EEVDF scheduler force..." ➔ "even though the EEVDF scheduler is designed to bound..."
+EEVDF가 원래 lag 값을 특정 범위로 제한(clamp/bound)하도록 설계되었음에도 불구하고 그 한계를 뚫었다는 뉘앙스를 살리는 것이 좋습니다.
+
+### Revision
+We hypothesize that a "laundering attack" can compromise the fairness guarantees of the EEVDF scheduler.
+Specifically, we define this attack as the injection of incessant, adversarial urgent signals designed to artificially induce lag debt on benign tasks.
+To validate this, we utilized `bpftrace` to hook `dequeue_task_fair()` and trace the `vlag` of scheduling entities.
+Our empirical analysis yields three key observations:
+First, the sum of `vlag`s over a given period does not converge to zero.
+Second, there is a statistically significant difference in the average `vlag` between benign tasks and those under attack.
+Finally, and most notably, we discovered anomalous `vlag`s that bypass the scheduler's clamping limits.
+Even though EEVDF is theoretically designed to bound a task's lag to a calculated value (typically +-3.8M ns in our testbed), these outliers clearly violate that constraint.
+
+
 ## Questions to dive next
 - Relationships and its own struct : task_struct - rq - sched_entity
 - Why is not sum of lag zero? (I think avg. lag should be zero)
@@ -339,4 +373,8 @@ khugepaged,-136347523
 - Why do you choose dequeue_task_fair to get a vlag?
 - What does the pair of enqueue/dequeue mean?
     -> I think I should know the flow of eevdf scheduling
+
+## Improvement of research (log)
+- Add a final prose for sum-up
+- Add a log for data/parameter mapping like `laundry_vlag.4.log = start_laundry.sh -w schbench -t 20 + bpftrace script A`
 

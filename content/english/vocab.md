@@ -216,7 +216,11 @@ utterly
 substituting A for B : B를 A로 대체하다.
 tranquillity
 unswerving
-relinquish
+relinquish ⚡️
 alongside theoreical/analytical results on why they should work.
 on behalf of somebody
 incessant
+lump sum
+disbursement
+Of the hundred largest economies in the world, over half are corporations—ahead of most countries.
+

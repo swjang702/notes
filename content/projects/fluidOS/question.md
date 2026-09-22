@@ -10,3 +10,4 @@
 
 ## To make worthy
 - What makes the difference between **urgency** in FluidOS and **deadline** in EEVDF?
+- How to know a task is urgent? How can we know how much urgent it is? (related with virtual deadline)

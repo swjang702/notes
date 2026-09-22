@@ -1,34 +1,51 @@
 # Overview
 
 ## (Quote)
+```
+```
 
-## Topic
+## Topic:
 
-## Goal of this work
+## Goal of this work:
 
-## Final data
+## Final data:
 
-## Final prose
 
+----
 
 # Think (Mon)
 
 ## Questions
 
+## Status quo
+
 ## Hypotheses
 
-## What to know(study)
 
-## What to test
-
+----
 
 # Input (Tue)
 
+## What to know/study
+
+
+----
 
 # Output (Wed&Thr)
 
 
+----
+
 # Analyze (Fri)
 
 
+----
+
 # Sum up (Sat)
+
+## Final prose 📄
+
+## Questions to dive next
+
+## Improvement of research (log)
+

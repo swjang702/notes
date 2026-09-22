@@ -15,3 +15,6 @@ My academic background is primarily in operating systems and container runtime s
 After finishing my Master's, I spent some time in industry, where I worked on a quite wide range of projects—from cloud infrastructure to embedded systems.
 
 I'm really excited to start my journey here and look forward to working with Professor Liu and all of you. Thank you!
+
+# Expected questions for me
+- Don't you have any regret for your previous security research?
