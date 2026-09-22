@@ -131,7 +131,8 @@ For example, tracing the execution of `ls` shows that scheduling begins with bas
 - Deep dive into oil theory (referring to insight.md)
 - What makes the difference between **urgency** in FluidOS and **deadline** in EEVDF?
 - ⭐️ About the flow diagram and call graphs, I still can't draw it own my own.
-    - Which behavior is first? enqueue or context switching?
+    - Why are there so many secondary functions?? e.g., what is the reason of existing of resched_curr()?
+
 
 ## Improvement of research (log)
 
