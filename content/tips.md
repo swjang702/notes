@@ -293,7 +293,7 @@ Organize and document your code, results, etc. IMMEDIATELY after a paper deadlin
 Don't kid yourself -- if you don't it then, it's never going to happen.
 
 #### 51. Quality and not quantity.
-You will be judged based on the quality, and not the quantity of your publicatioins.
+You will be judged based on the quality, and not the quantity of your publications.
 
 ### Talks
 We cannot overestimate the importance of giving good talks. A good talk can make the difference between people reading/citing your conference paper and people dismissing it.
