@@ -156,6 +156,7 @@ AI가 10초 만에 설명해 주는 걸 보고 나면, *"아... 이걸 내가 �
 - Action & Harvesting (요약 & 정리)
 - 80% & active and deliberate input (not foolish brute force)
 - How to read a paper:
+    - 0. Infer topics, core problems, key insights and so on from the title.
     - 1. Read Abstract
     - 2. Write down an short summary you got
     - 3. Write down your curiosity about their contention and results
