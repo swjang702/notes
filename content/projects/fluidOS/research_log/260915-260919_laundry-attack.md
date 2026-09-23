@@ -130,8 +130,9 @@ For example, tracing the execution of `ls` shows that scheduling begins with bas
 - Where do I feel the fluid-state system of EEVDF in the code base or its relationships?
 - Deep dive into oil theory (referring to insight.md)
 - What makes the difference between **urgency** in FluidOS and **deadline** in EEVDF?
-- ⭐️ About the flow diagram and call graphs, I still can't draw it own my own.
+~~- ⭐️ About the flow diagram and call graphs, I still can't draw it own my own.~~
     - Why are there so many secondary functions?? e.g., what is the reason of existing of resched_curr()?
+- Anomaly that is picking procede enqueue on `ps`. --> write a simple bpf tracer again.
 
 
 ## Improvement of research (log)

@@ -95,9 +95,9 @@ When you think about that first question regarding your pivot to robotics and ph
 - I didn't expect to see you here (여기서 볼 줄 몰랐어요)
 - Are you from around here? (이 동네 분이세요?)
 
-- How've you been? (그동안 잘 지냈어?)
+- How've you been? (그동안 잘 지냈어?) ⭐️
     - What's up (친한사이, 잘 지냈어?)
-- How are things? (요즘 근황을 두루 물을 때)
+- How are things? (요즘 근황을 두루 물을 때) ⭐️
 
 - You don't say (설마, 그래요? : 놀라운 얘기에 맞장구 칠 때)
 - I couldn't agree more (저도 완전 동감이에요)
@@ -117,7 +117,7 @@ When you think about that first question regarding your pivot to robotics and ph
 - Let's get some air (바람 좀 쐬죠)
 - This is awkward (이거 좀 어색하네)
 - Am I interrupting (something)? (제가 방해 했나요?)
-- I'll leave you to it (방해 안할게)
+- I'll leave you to it; I'll let you get back to it. (방해 안할게)
 - Forget I said anything (내가 말 안 한 걸로 해요 : 괜한 말을 했나 싶을 때)
 - I'm not much of a talker (제가 말수가 적어요)
 

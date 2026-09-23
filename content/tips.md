@@ -162,6 +162,7 @@ AI가 10초 만에 설명해 주는 걸 보고 나면, *"아... 이걸 내가 �
     - 4. Find out data to be able to answer to your questions and try to understand it really.
     - 5. If you feel read more, and then read a paper.
 - Quality of research comes from your interest, quality of paper comes from reasoning.
+- Answers come from Questions. Good Questions make good answers. If you don't have questions, you ain't get answers.
 
 # ⭐️ Pracktical Research Productivity Strategy
 - S      M             T       W T      F         S      (A week)
