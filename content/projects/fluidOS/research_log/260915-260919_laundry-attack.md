@@ -133,6 +133,10 @@ For example, tracing the execution of `ls` shows that scheduling begins with bas
 ~~- ⭐️ About the flow diagram and call graphs, I still can't draw it own my own.~~
     - Why are there so many secondary functions?? e.g., what is the reason of existing of resched_curr()?
 - Anomaly that is picking procede enqueue on `ps`. --> write a simple bpf tracer again.
+    -> Why do you want trace? -> to see how eevdf works.
+    -> Why do you want to see? -> to fully understand it.
+    -> humm. OK. What do you want to see? -> First of all, simple version, varying of lag, deadline, vruntime, and picking behavior.
+    -> Ok. To get them, which functions should you look into?
 
 
 ## Improvement of research (log)
