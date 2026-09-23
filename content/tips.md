@@ -243,9 +243,9 @@ Good research ideas don't happen along every day.
 
 ### The Research Process
 
-#### 33. Start with writing.
+#### 33. Start with writing.⭐️
 When you have an idea, start by writing it down. Work out the details on paper first before you write any code. This will help expose problems. and flesh out the details.
-*When working on a paper, write an outline before writing any text so you know what you are tyring to do.*
+*When working on a paper, write an outline before writing any text so you know what you are trying to do.*
 
 #### 34. Learn when to quit.
 
