@@ -13,3 +13,19 @@
 - Firstly, suggest an R4 optimization problem about on-device DRL.
 - Substantially couple prior two conference papers.
 - Use Multi-Objective Markov Decision Process (MOMDP).
+
+# [26 Nature] Outplaying elite table tennis players with an autonomous robot
+## Summary
+The table tennis AI robot is capable to compete with a elite human athelete by using good sensors and well-trained policies.
+To acquire granular perception, they use several fine-grained sensors.
+For agile control, Ace leverages a deep RL policy which is trained by an algorithm named SAC.
+These allow the AI robot move fast with high frequency.
+This work show state of the art physical AI attain a high level of agility against top-level human athletes with domain specific deep RL training and apt sensors.
+
+## Strengths and Weaknesses
+### Strengths
+- They achieve low-latency perception and control in physical AI system.
+- Mathematically well-trained models.
+### Weaknesses
+- It is quite domain-specific training and enviornment.
+- Lack of generalization yet.

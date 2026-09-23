@@ -9,7 +9,7 @@ Here is why this formulation muscle is the absolute key to world-class research.
 
 #### 1. Escaping the "Crowded Front Door"
 
-When a massive problem becomes obvious to the entire community (e.g., "LLM inference is too expensive", "Cloud multi-tenancy is insecure", or "eBPF lacks formal verification"), thousands of brilliant brains rush the front door. If you accept the problem as it is commonly presented, you are trapped in a brute-force bloodbath of micro-optimizations.
+When a massive problem becomes obvious to the entire community (e.g., "LLM inference is too expensive", "Cloud multi-tenancy is insecure", or "eBPF lacks formal verification"), *thousands of brilliant brains rush the front door.* If you accept the problem as it is commonly presented, you are trapped in a brute-force bloodbath of micro-optimizations.
 
 Eminent researchers don't push on the locked front door. They look at the building, walk around to the back, and say: *"Fundamentally, this isn't an AI problem or a cloud problem. This is actually an asynchronous event-scheduling problem. And because I own the scheduling layer, I own the solution.*
 

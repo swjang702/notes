@@ -99,11 +99,11 @@ don't automatically interpret it as physical location. In technical English, on 
 --------------------------------------
 
 # Academic Vocabulary (output focused)
+## General usages
 - induce
 - designed to
 - over a given period
 - converge to/on/upon
-- statistically
 - those under `X`
 - bypass
 - constraint
@@ -111,16 +111,19 @@ don't automatically interpret it as physical location. In technical English, on 
 - compromise
 - hypothesize
 - inject;injection
-- agnostic
 - a priori
 - atop
 - **posit something | posit that…** to suggest or accept that something is true so that it can be used as the basis for an argument or discussion
 - A is followed by B : A 다음에 B
 - feasible/doable
-- retroactively
 - A ahead of B (=A ranking higher/larger than B)
 - Of X, Y...; Of all the students in the class, ten passed.
 
+## Detailed expressions
+- perturbation
+- agnostic
+- retroactively
+- statistically
 
 
 
