@@ -472,8 +472,8 @@ Computer science includes many different kinds of research efforts, some of whic
     - In many areas, the data have a way of suggesting their own problems. Systems programmers can collect data on actual disk access patterns and study it for regularities to exploit. Theoreticians of programming languages can look at real programming languages, and graphics programmers can look at real photographs and movies, for effects that they don't know how to capture.
 
 __Finally:__ Now that you're in grad school and no one sets your agenda, everything you do is open-ended. That means you can easily spend too much time on any task you start, especially if stubborn perfectionism or an inferiority complex leads you to feel that your work is never good enough, or if you're subconsciously trying to put off that scary next phase of your research.
-- Don't spend eternity on background reading. Recognize that you will have to start your work in a state of partial ignorance: you don't have time to learn everything you need to know. That's okay -- your professors do the same thing. In fact it's good, since ignorance leaves your mind free to see new ways of doing things. So start doing your own thinking early. You can alternate that with reading: just show your ideas periodically to someone who can warn you about related work and point you to relevant papers.
-- Don't spend eternity on one problem. No solution is ever complete. Take the time to make your work solid and beautiful and presentable, but recognize when you've hit a point of diminishing returns. Use project #1 to inspire project #2, which stands as research on its own. Don't use it as the core of project #1', #1'', etc. forever.
+- **Don't spend eternity on background reading.** Recognize that you will have to start your work in a state of partial ignorance: you don't have time to learn everything you need to know. That's okay -- your professors do the same thing. In fact it's good, since ignorance leaves your mind free to see new ways of doing things. So start doing your own thinking early. You can alternate that with reading: just show your ideas periodically to someone who can warn you about related work and point you to relevant papers.
+- **Don't spend eternity on one problem. No solution is ever complete.** Take the time to make your work solid and beautiful and presentable, but recognize when you've hit a point of diminishing returns. Use project #1 to inspire project #2, which stands as research on its own. Don't use it as the core of project #1', #1'', etc. forever.
 
 
 # Write the Paper First (@)
@@ -533,12 +533,6 @@ Have summaries of various lengths and levels of detail of your work mentally pre
 If someone expresses an interest in your work, follow up! Send them email talking about new ideas or asking questions; send them drafts of papers; ask them for drafts of their papers and send them comments. (If you do this, they'll be sure to remember you!)
 
 Finding specific mentors can be very useful. Especially if you feel that you are isolated at your institution, having a colleague at another institution who can give you advice, feedback on drafts of papers, and suggestions for research directions can be extremely valuable.
-
-# Write Good Papers
-https://lemire.me/blog/rules-to-write-a-good-research-paper/
-
-## What a good paper should contain
-- A sexy start: tell the reader early why he should read your paper. Don’t summarize, sell! A good abstract tells us **why we should read this paper**, it does not summarize the paper. Convince us early that your paper is important. For example, the Kent Beck recipe for a good 4-sentence abstract is: (1) state the problem (2) say why it is interesting (3) say what your solution achieves (4) say what follows from your solution.
 
 # How To Be a Good Graduate Student by Deirdre N. McCloskey
 https://www.deirdremccloskey.com/docs/pdf/Article_315.pdf
