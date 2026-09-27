@@ -4,6 +4,7 @@
 * All work must be intended and be under the outline.
 * Data & How to show better than writing.
 * Motivation can be a broad view of the inductive reasoning behind the questions.
+* All research must start from a question.
 
 ## Overview
 ```

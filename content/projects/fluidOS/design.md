@@ -1,4 +1,20 @@
 # Design
+
+```
+                            capped at a 1-Beta,      capped at a reserved        
+                            EEVDF's bounded lag      fraction Beta               
+                                    ▲                    ▲                       
+                                    │                    │                       
+                               Normal-tier           Urgent-tier                 
+                Interrupts/        T(t)                 U(t)                     
+Emergent        Events          ┌───────┐  Promotion ┌───────┐        Memory     
+event      ──────►▒▒▒▒▒────────►│       ├───────────►│       │◄──────►▒▒▒▒▒      
+in physical       ▒▒▒▒▒  write  │       │◄───────────┤       │        ▒▒▒▒▒      
+world             Sensor  u(t)  └───────┘  Demotion  └───────┘     (lag consumer)
+                (urgency              (when u_i(t)<theta)                        
+                 producer)                                                       
+```
+
 ## Model
 - Task t = (w, u(t), lag(t))
     - w is nice value (constant)
