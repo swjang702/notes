@@ -118,6 +118,9 @@ don't automatically interpret it as physical location. In technical English, on 
 - feasible/doable
 - A ahead of B (=A ranking higher/larger than B)
 - Of X, Y...; Of all the students in the class, ten passed.
+- as to
+- so as to
+- By doing so,
 
 ## Detailed expressions
 - perturbation

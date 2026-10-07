@@ -1,0 +1,93 @@
+<h2 id="what-is-the-spaceros-and-its-features">What is the spaceROS and
+its features?</h2>
+<p>It is a <em>middleware layer</em> of an open-source flight framework
+derived from the <em>ROS 2</em>.<br />
+It uses Data Distribution Service (DDS) to allow different nodes to
+communicate.</p>
+<h3 id="why-do-robotic-systems-need-a-middleware-layer">Why do robotic
+systems need a middleware layer?</h3>
+<p>First, abstractions for the complexity from many devices like
+sensor.<br />
+Second, it enables distributed computing as if single unified
+computer.</p>
+<pre><code>          ▲  ┌───┐    ┌───┐        
+          │  │App│    │App│        
+          │  └───┘    └───┘        
+          │  ┌───┐    ┌───────────┐
+ &quot;Timely&quot; │  │ROS│    │Extra Layer│
+(Vertical │  └───┘ ~= └───────────┘
+Isolation)│  ┌───┐    ┌───┐        
+          │  │OS │    │OS │        
+          │  └───┘    └───┘        
+          │  ┌───┐    ┌───┐        
+          │  │HW │    │HW │        
+          ▼  └───┘    └───┘        
+            ◄─────────────────────►
+              &quot;Fault Tolerance&quot;    
+                 (Horizontal       
+                  Isolation)       </code></pre>
+<h2 id="candidate-directions">Candidate Directions</h2>
+<p>From the discussion summary and my investigation, I have selected
+brief two directions.<br />
+I thought these two cases could break up space systems.</p>
+<h3 id="timely-problem">1. “Timely” Problem</h3>
+<p>The goal is to <code>guarantee End-to-End worst case latency</code>
+via <code>cross-layer scheduling</code>.<br />
+ROS 2 has its own scheduler “Executor”, and the OS, of course, has its
+own CPU scheduler.<br />
+ROS 2 knows the “meaning” of the data, while the OS knows the “shape” of
+the data.<br />
+If we can make them somehow talk to each other, we might take advantage
+of “time”.<br />
+Also, as the CROS-RT work reduced unpredictability of communication
+across multi layers, we might not have to concern about priority
+inversion across layers.</p>
+<h3 id="fault-problem">2. “Fault” Problem</h3>
+<p>The goal is to maintain seamless failover orchestration and state
+consistency during dynamic circumstances.<br />
+The key insight is that we can see a space robotic system as a tiny hard
+real-time cloud.<br />
+There are lots of sensor devices and multiple nodes for fault tolerance.
+And the SpaceROS provides how to communicate each other.<br />
+Kubernetes already provides several mechanisms (e.g., QoS, admission
+control, side car, etc.) to keep eventual consistency in a distributed
+system.<br />
+What we can do is to apply existing distributed concepts like K8s to
+space robotic systems to solve the “Fault” problem, as the vLLM paper
+leverages traditional OS concepts into LLM’s KV cache memory.<br />
+A difference is time-scale; in K8s, it takes 3 secs to re-deploy a pod.
+Meanwhile, in spacecraft, it should take milliseconds.</p>
+<pre><code>┌───┐  ┌───┐ 
+│App│  │App│ 
+└───┘  └───┘ 
+┌───────────┐
+│Kubernetes │
+└───────────┘
+┌───┐  ┌───┐ 
+│OS │  │OS │ 
+└───┘  └───┘ 
+┌───┐  ┌───┐ 
+│HW │  │HW │ 
+└───┘  └───┘ </code></pre>
+<h3 id="merging-them">3. Merging them</h3>
+<p>By combining them, for example, the K8S-style eBPF acts as the
+“Bouncer”(data dropping) at the door, and the Cross-Layer Scheduler acts
+as the “VIP Escort”(data processing) inside the club.<br />
+Without the Bouncer, the VIP Escort has to wade through a massive crowd
+of garbage packets inside the kernel to find the VIP.<br />
+Without the VIP Escort, the VIP gets in the door but gets stuck waiting
+in a normal CPU queue.</p>
+<h2 id="key-assumptions">Key Assumptions</h2>
+<ul>
+<li>Our target, such as the Starship, does not use RTOSes but Linux
+(specifically PREEMPT_RT).</li>
+<li>ROS and the OS are mutually blind; ROS is a king locked inside a
+castle shouting orders, while the OS blindly manages the gates. They
+suffer from a lack of shared context.</li>
+<li>We can assume dynamic states (e.g., mission-mode transition,
+defective HW, interrupt storm, etc.). CROS-RT did its work based on
+steady-state.</li>
+<li>Existing works have primarily focused on the ROS 2 layer, such as
+multi-threaded executor. This is one reason why CROS-RT work is
+worthy.</li>
+</ul>

@@ -1,7 +1,7 @@
-# Falsification Attack
+# The Laundering Attack
 
-## 1. The laundering attack
-### Overview
+## Overview
+
 - Define promotion and demotion
 ```
 Normal-tier           Urgent-tier
@@ -45,13 +45,14 @@ It needs the one number each produces: u_i(t) from events, and a recomputation c
 
 - Promotion changes a task's *future* **fluid rate only**.
 
-### Questions
-- When is u_i(t) changed?
+## Questions
+- [QA1.A1.A1'.A1.A1.3] When is u\_i(t) changed?
     - After handling the urgent task by the scheduler?
-- How do interrupts/events account for u_i(t) at first?
-- Does the Premise ii. ask a relationship between interrupt and other resources?
+- [QA1.A1.A1'.A1.A1.4] How to interrupts or events account for u\_i(t) at first?
+- [QA1.A1.A1'.1.3] How to generate urgency signals?
+  - [QA1.A1.A1'.1.3.1] What makes external hardware interrupts equals urgent signals?
 
-### Algorithm
+## Algorithm
 **Assumption**
 i. There is a kind of *urgency* property within OS, which might be invisible now.
 
@@ -68,7 +69,7 @@ Therefore, if we can justify this version of laundering attack, we verify the ex
 
 **Pseudo Procedure**
 1. Interrupt occur.
-2. Observe resources affected by it. *@ Current here*
+2. Observe resources affected by it.
 3. After completing the task, Observe again the resources getting back to their original positions.
 4. Loop incessant 1 to 3.
 5. While the loop, figure out abnormal status of some resources or OS.
@@ -78,4 +79,3 @@ Therefore, if we can justify this version of laundering attack, we verify the ex
     -> refer to `How to trigger an interrupt` section in the study.md
 - Define which resources and hooks you look at.
 
-## 2. Tier dilution

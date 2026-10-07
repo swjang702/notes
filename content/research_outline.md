@@ -6,6 +6,11 @@
 * Motivation can be a broad view of the inductive reasoning behind the questions.
 * All research must start from a question.
 
+### Your aim is to explain
+1. **Topic** What you are studying---I am working on the topic of ...
+  2. **Question** What you don't know about it---because I want to find out ...
+    3. **Significance** Why you want your audience to know and care about it---in order to help my audience understand better ...
+
 ## Overview
 ```
                      Phenomenon                                            

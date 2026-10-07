@@ -154,6 +154,7 @@ unobtrusive
 imperative
 obfuscate (=obscure, confuse)
 so as to (=in order to) ~ 하기 위해서, ~ 하는 쪽으로
+as to
 exempt
 delineate (=describe)
 visceral

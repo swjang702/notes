@@ -157,7 +157,7 @@ AI가 10초 만에 설명해 주는 걸 보고 나면, *"아... 이걸 내가 �
 - 80% & active and deliberate input (not foolish brute force)
 - How to read a paper:
     - 0. Infer topics, core problems, key insights and so on from the title.
-    - \*. Read first other's quote
+    - 0.5. Read first other's quote
     - 1. Read Abstract
     - 2. Write down an short summary you got
     - 3. Write down your curiosity about their contention and results
@@ -165,6 +165,7 @@ AI가 10초 만에 설명해 주는 걸 보고 나면, *"아... 이걸 내가 �
     - 5. If you feel read more, and then read a paper.
 - Quality of research comes from your interest, quality of paper comes from reasoning.
 - Answers come from Questions. Good Questions make good answers. If you don't have questions, you ain't get answers.
+- When you begin your research project, try to draw a trade-off chain.
 
 # ⭐️ Pracktical Research Productivity Strategy
 - S      M             T       W T      F         S      (A week)
@@ -392,14 +393,14 @@ Delip Rao suggests: _"Never read the original paper on X first. Instead read sev
     - read a lot of abstracts
 - when the going gets tough, switch to background reading
 
-# Professor Il Kon Kim
+# From Professor Il Kon Kim
 - 기발한 문제를 찾는것 in 새로운 분야
 - Networking
 - Being a core person
 - Physical AI: what domain data would you?
 - AI와 Security 새로운 국면
 
-# Professor Byung Chul Tak (교수님께서 산전수전, 실패를 몸소 직접 다 겪어 보심)
+# From Professor Byung Chul Tak (교수님께서 산전수전, 실패를 몸소 직접 다 겪어 보심)
 - 절대 포기하지말고 두드릴 것. 그러면 결국 event가 발생함.
 - 연구/논문 oriented mind를 처음부터 가질 것. 그런 사람과 아닌 사람은 차이가 발생함.
 - 1년에 top-tier 논문 1개씩. 미국 교수직 하려면 1.5개. 그리고 꾸준히 실적이 나오는게 중요함.
@@ -709,3 +710,14 @@ But also ask yourself: *What interests me about this topic? What would interest 
 
 All this may seem formulaic, but it's what readers expect. And when you master a rhetorical like this, you have more than a formula for writing.
 **You also have a tool for thinking.** To write a full statement of your shared context and problem, you have to think hard about what your readers know, what they don't, and, in particular, what they should know and why.
+
+- **No skill is valued more highly than the ability to recognize a problem, then to articulate it in a way that convinces others both to care about it and to believe it can be solved, especially by you.**
+
+
+# From Professor Cong Liu
+- Systems research is all about trade-off.
+
+
+
+
+
