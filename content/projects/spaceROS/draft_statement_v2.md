@@ -4,7 +4,7 @@ It uses Data Distribution Service (DDS) to allow different nodes to communicate.
 
 ### Why do robotic systems need a middleware layer?
 First, abstractions for the complexity from many devices like sensors.
-Second, it enables distributed computing as if were a single unified computer.
+Second, it enables distributed computing as if it were a single unified computer.
 
 ```
           ▲  ┌───┐    ┌───┐        
@@ -45,8 +45,8 @@ deadline     devices      for simplicity    from isolation
                                                   │       
                                                   ▼       
 Missing  ◄── Non-     ◄──     Hard to   ◄── Lack of       
-deadline     deterministic    predict       shared context
-                        (unpredictability▲)               
+deadline     determi-         predict       shared context
+             nistic     (unpredictability▲)               
 ```
 
 ### 2. "Fault" Problem
@@ -83,4 +83,45 @@ Without the VIP Escort, the VIP gets in the door but gets stuck waiting in a nor
 - ROS and the OS are mutually blind; ROS is a king locked inside a castle shouting orders, while the OS blindly manages the gates. They suffer from a lack of shared context.
 - We can assume dynamic states (e.g., mission-mode transition, defective HW, interrupt storm, etc.). CROS-RT did its work based on steady-state.
 - Existing works have primarily focused on the ROS 2 layer, such as multi-threaded executor. This is one reason why CROS-RT work is worthy.
+
+
+## This line of work
+```
+                                   [26RTAS]ROSBand
+[21RTAS]PiCAS                      Regulating memory bandwidth
+Predictable end-to-end latency     to guarantee timing performance
+using scheduling within ROS 2               ▲
+                 ▲                          │
+                 │                          │
+              ───┴─────────────────┬────────┴────────────────────────►
+                                   │
+                                   ▼
+                             [25RTAS]CROS-RT
+                             Cross-layer scheduling
+                             Bridging between
+                             OS and ROS 2
+```
+```
+                ▲ ┌───┐ ▲
+                │ │App│ │
+        CROS-RT │ └───┘ │ PiCAS
+(Priority-chain)│ ┌───┐ │ (Priority-chain)
+                │ │ROS│ │
+                │ └───┘ ▼
+                │ ┌───┐
+                │ │OS │ ▲
+                ▼ └───┘ │ ROSBand
+                  ┌───┐ │ (Mem-regulation)
+                  │HW │ ▼
+                  └───┘
+```
+
+
+## Next Questions
+- How/Can OS scheduler support a bounded deadline?
+  e.g., Given a priority-chain, if we modify OS scheduler, can we reduce or guarantee end-to-end worst-case latency?
+- What makes difference between ROS 2(territorial robot) and spaceROS(Starship)?
+  - [A] dynamic env(hardware defect, mission-mode transition, etc.), distributed systems?
+- From where does unpredictability come?
+- Why is CPU scheduling insufficient to establish sensor-to-actuator deadline?
 

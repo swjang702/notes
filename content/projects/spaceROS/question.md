@@ -123,6 +123,8 @@
              -> They do not share information well.
                 ROS 2 knows the *meaning* of the data.
                 Linux only know the *shape* of the data.
+  - ~~[Q8.2] What can be the difference between ROS systems and space robotic systems?~~
+    - [A8.2] Terrestrial robots are designed to be "Fail-Safe" (if it breaks, stop and wait for a human). Space robots must be "Fail-Operational" (if it breaks, fix it autonomously in milliseconds or the vehicle is destroyed). Different points can be hardware trust and mission modes. e.g., more dynamic env.
 - [Q10] Do they use cFS and OSAL? If so, what parts are insufficient based on the OSAL git repository?
 - ~~[Q12] Does SpaceROS use GPU? Are there any spaces for GPU?~~
   - [A12] Yes, GPUs are currently making their way into space, but they are causing massive headaches for systems engineers.
@@ -134,6 +136,7 @@
 - ~~[Q14] Which OS do spaceROS and Starship use? Do they use Linux?~~
   - [A14] Yes, PREEMPT_RT patched Linux or ELISA, etc.
 - ~~[Q15] Can be there any space for eBPF for space robotics? Especially, between ROS 2 and Linux kernel? (Of course, this talks about methodology, not core research problem)~~
+- [Q18] How to connect between different layers? e.g., 1. mapping, 2. propagation, etc.
 
 ### Study
 - ~~[Q7] What is SpaceOS? What is feature of it?~~

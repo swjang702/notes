@@ -1,0 +1,84 @@
+<h1 id="the-laundering-attack">The Laundering Attack</h1>
+<h2 id="overview">Overview</h2>
+<ul>
+<li>Define promotion and demotion</li>
+</ul>
+<pre><code>Normal-tier           Urgent-tier
+    T(t)                 U(t)    
+ ┌───────┐  Promotion ┌───────┐  
+ │       ├───────────►│       │  
+ │       │◄───────────┤       │  
+ └───────┘  Demotion  └───────┘  
+       (when u_i(t)&lt;theta)       </code></pre>
+<pre><code>                               Normal-tier           Urgent-tier                 
+                Interrupts/        T(t)                 U(t)                     
+Emergent        Events          ┌───────┐  Promotion ┌───────┐        Memory     
+event      ──────►▒▒▒▒▒────────►│       ├───────────►│       │◄──────►▒▒▒▒▒      
+in physical       ▒▒▒▒▒  write  │       │◄───────────┤       │        ▒▒▒▒▒      
+world             Sensor  u(t)  └───────┘  Demotion  └───────┘     (lag consumer)
+                (urgency              (when u_i(t)&lt;theta)                        
+                 producer)                                                       </code></pre>
+<pre><code>                            capped at a 1-Beta,      capped at a reserved        
+                            EEVDF&#39;s bounded lag      fraction Beta               
+                                    ▲                    ▲                       
+                                    │                    │                       
+                               Normal-tier           Urgent-tier                 
+                Interrupts/        T(t)                 U(t)                     
+Emergent        Events          ┌───────┐  Promotion ┌───────┐        Memory     
+event      ──────►▒▒▒▒▒────────►│       ├───────────►│       │◄──────►▒▒▒▒▒      
+in physical       ▒▒▒▒▒  write  │       │◄───────────┤       │        ▒▒▒▒▒      
+world             Sensor  u(t)  └───────┘  Demotion  └───────┘     (lag consumer)
+                (urgency              (when u_i(t)&lt;theta)                        
+                 producer)                                                       </code></pre>
+<p><code>Interrupts/events are urgency producers: they are the sensor through which the physical world writes into u_i(t) Memory is a lag consumer: eviction decisions read the scheduler's state and are priced in the scheduler's own currency. Memory tells it what future work will cost. It needs the one number each produces: u_i(t) from events, and a recomputation cost e_extra from memory.</code></p>
+<ul>
+<li>Promotion changes a task’s <em>future</em> <strong>fluid rate
+only</strong>.</li>
+</ul>
+<h2 id="questions">Questions</h2>
+<ul>
+<li>[QA1.A1.A1’.A1.A1.3] When is u_i(t) changed?
+<ul>
+<li>After handling the urgent task by the scheduler?</li>
+</ul></li>
+<li>[QA1.A1.A1’.A1.A1.4] How to interrupts or events account for u_i(t)
+at first?</li>
+<li>[QA1.A1.A1’.1.3] How to generate urgency signals?
+<ul>
+<li>[QA1.A1.A1’.1.3.1] What makes external hardware interrupts equals
+urgent signals?</li>
+</ul></li>
+</ul>
+<h2 id="algorithm">Algorithm</h2>
+<p><strong>Assumption</strong><br />
+i. There is a kind of <em>urgency</em> property within OS, which might
+be invisible now.</p>
+<p><strong>Premise</strong><br />
+i. A physical event emergent triggers an interrupt.<br />
+ii. <em>Urgency propagates</em> from interrupt to other resources.<br />
+is equivalent to<br />
+The result of it is that other resources such as CPU scheduling, GPU
+execution, memory are affected<br />
+at once (by that urgency).<br />
+iii. After an urgency wave, the resources related get back to their
+original status.</p>
+<p>Based on the Premise ii. and iii., we can say that the laundering
+attack occur in incessant loop between the Premise ii. and iii., which
+subsumes the case of regarding promotion &amp; demotion as it excludes
+the computation of promotion &amp; demotion.<br />
+Therefore, if we can justify this version of laundering attack, we
+verify the existence of the laundering attack in the design of FluidOS.
+If so, we falsify the design against laundering attack.</p>
+<p><strong>Pseudo Procedure</strong><br />
+1. Interrupt occur.<br />
+2. Observe resources affected by it.<br />
+3. After completing the task, Observe again the resources getting back
+to their original positions.<br />
+4. Loop incessant 1 to 3.<br />
+5. While the loop, figure out abnormal status of some resources or
+OS.</p>
+<p><strong>Preparation for the Procedure</strong><br />
+- How to occur an interrupt mapped to an emergent physical event.<br />
+-&gt; refer to <code>How to trigger an interrupt</code> section in the
+study.md<br />
+- Define which resources and hooks you look at.</p>
