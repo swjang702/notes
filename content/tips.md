@@ -166,6 +166,7 @@ AI가 10초 만에 설명해 주는 걸 보고 나면, *"아... 이걸 내가 �
 - Quality of research comes from your interest, quality of paper comes from reasoning.
 - Answers come from Questions. Good Questions make good answers. If you don't have questions, you ain't get answers.
 - When you begin your research project, try to draw a trade-off chain.
+- Ask chatgpt to give example or question about a topic to understand and practice!!!! that would be very good to understand and review the concept!! e.g., question or example about eevdf or even about research paper.?!.?
 
 # ⭐️ Pracktical Research Productivity Strategy
 - S      M             T       W T      F         S      (A week)
