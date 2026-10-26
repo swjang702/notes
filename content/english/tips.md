@@ -204,3 +204,7 @@ So I wouldn't necessarily imitate his **accent**, but I'd absolutely imitate his
 
 That's actually a very good target for your current English speaking/listening development.
 
+
+# About output and fluency
+Let's think about this: you have very limited words you can use. And only using them, how do you express your thought?
+This is the key idea of Speaking English.

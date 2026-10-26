@@ -224,4 +224,6 @@ incessant
 lump sum
 disbursement
 Of the hundred largest economies in the world, over half are corporations—ahead of most countries.
-
+reciprocal
+denominate
+substrate

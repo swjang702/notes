@@ -157,16 +157,25 @@ AI가 10초 만에 설명해 주는 걸 보고 나면, *"아... 이걸 내가 �
 - 80% & active and deliberate input (not foolish brute force)
 - How to read a paper:
     - 0. Infer topics, core problems, key insights and so on from the title.
-    - 0.5. Read first other's quote
+      - 0.5. Read first other's quote
     - 1. Read Abstract
     - 2. Write down an short summary you got
     - 3. Write down your curiosity about their contention and results
+      - 3.5. `For systems research, always thinking about what is abstract(WHAT do we expose?), mechanism(HOW does it work?), policy(WHAT decision should be made?), and trade-off(WHAT do they sacrifice?) of this work?`
     - 4. Find out data to be able to answer to your questions and try to understand it really.
     - 5. If you feel read more, and then read a paper.
 - Quality of research comes from your interest, quality of paper comes from reasoning.
 - Answers come from Questions. Good Questions make good answers. If you don't have questions, you ain't get answers.
 - When you begin your research project, try to draw a trade-off chain.
 - Ask chatgpt to give example or question about a topic to understand and practice!!!! that would be very good to understand and review the concept!! e.g., question or example about eevdf or even about research paper.?!.?
+- p71 in ostep, Determining the workload is a critical part of building policies, and the more you know about workload, the more fine-tuned your policy can be.
+- How to deal with a discrepancy between the output of AI and cognitive understanding of human?
+```
+AI가 훨씬 빠르게 생각하고 결과물을 만드는 상황에서 인간 연구자는 어떻게 해야 할까?
+나는 AI의 속도를 따라잡으려고 할 필요가 없다고 생각해.
+대신 AI의 높은 생산 속도가 인간의 깊은 사고를 방해하지 않도록, 그 사이의 인터페이스를 설계해야 해.
+그리고 이런 협업에서 인간이 할 일은 AI가 작성한 모든 내용을 읽는 것이 아니라, 무엇을 깊이 이해해야 할지 선택하고, 중요한 판단을 내리며, 자신의 mental model을 계속 발전시키는 것이라고 생각해.
+```
 
 # ⭐️ Pracktical Research Productivity Strategy
 - S      M             T       W T      F         S      (A week)
@@ -719,6 +728,8 @@ All this may seem formulaic, but it's what readers expect. And when you master a
 - Systems research is all about trade-off.
 
 
+# 대학원생 때 알았더라면 좋았을 것들
+- 특히 연구라고 하는 것은 연속적인 시간의 확보가 아주 중요하다. ... 지식 근로자에게는 30분씩 따로 6번 일하는 것은 소용없고, 3시간의 연속으로 일할 수 있는 시간을 확보하는 것이 필요하다...
 
 
 

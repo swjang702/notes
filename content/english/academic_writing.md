@@ -127,6 +127,7 @@ don't automatically interpret it as physical location. In technical English, on 
 - agnostic
 - retroactively
 - statistically
+- reciprocal
 
 
 

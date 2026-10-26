@@ -153,6 +153,24 @@ This is acceptable for a self-driving car's 100ms camera pipeline, but it can be
 - ROS 1 has several limitations: (a) centralized architecture, (b) lack of built-in-multi-robot support, and (c) lack of real-time guarantee
 
 
+## Etc.
+
+### [27] RELAY: Bridging Transformer Runtime Boundaries and Linux Fair Scheduling
+
+#### 1. Summary
+They argue movement of transformer inference from isolated to full shared host execution leads to non-negligible performance overhead.
+To solve this problem, they find a gap between transformer layer scheduling and OS scheduling, Linux fair scheduler.
+The key insight is that selected boundary by transformer layers only can be done after CPU feeder is scheduled by Linux scheduler.
+This work introduces a light-weight extension of Linux EEVDF identifying critical data such as selected boundary and CPU feeder.
+
+#### 2. Strengths
+
+#### 3. Weaknesses
+
+#### 4. Other Comments
+
+
+### [96 RTSS] A Proportional Share Resource Allocation Algorithm for Real-Time, Time-shared Systems
 
 
 

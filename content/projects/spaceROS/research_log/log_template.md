@@ -1,5 +1,10 @@
 # Overview
 
+* Before ending up your daily research, write down followings:
+  - What did I discover?
+  - Where did I stop?
+  - What's the very next action?
+
 ## (Quote)
 ```
 ```

@@ -1,0 +1,391 @@
+<h1 id="ros-2-and-linux-scheduling">ROS 2 and Linux Scheduling</h1>
+<p><em>Coordinating callback dispatch and CPU service for
+dependency-rich robotic workloads</em></p>
+<p><strong>Research question.</strong> When a short ROS 2 callback
+unlocks GPU computation or another downstream stage, is there a
+scheduling failure that neither the executor nor Linux can adequately
+address on its own—or through a straightforward combination of existing
+techniques?</p>
+<h2 id="introduction">1. Introduction</h2>
+<p>In modern robotic pipelines, a short CPU segment can determine when a
+much larger downstream computation begins. Perception and planning may
+depend on timely GPU launches, yet the CPU work that initiates those
+launches competes with ordinary callbacks and background threads.
+<strong>Linux AGX</strong> and <strong>RELAY</strong> demonstrate that
+scheduling a CPU feeder promptly can matter more to application progress
+than its CPU demand alone would suggest. Their broader lesson is that
+<em>CPU scheduling controls when other resources can make
+progress</em>.</p>
+<p>ROS 2 adds another scheduling boundary. An executor selects callbacks
+and maps their execution onto Linux threads; Linux schedules those
+threads without directly selecting the callbacks waiting inside the
+executor. A critical callback may therefore wait <strong>before
+selection</strong>, even when its worker receives CPU service.
+Conversely, a callback selected promptly may be delayed <strong>after
+selection</strong> by Linux contention. These are distinct control
+points, and neither layer automatically has the information or authority
+of the other.</p>
+<p><strong>The objective of this work is to determine whether that
+separation produces an important, generalizable scheduling failure—and,
+only if it does, identify the minimum coordination required to address
+it.</strong> A convincing result must explain why a well-tuned executor
+combined with existing Linux scheduling mechanisms is insufficient.
+Lower end-to-end latency alone would not establish a new OS
+contribution.</p>
+<h2 id="problem-characterization">2. Problem Characterization</h2>
+<h3 id="where-is-dependency-critical-work-delayed">2.1 Where is
+dependency-critical work delayed?</h3>
+<pre class="text"><code>  Upstream event / data available
+                 |
+                 v
+       Callback becomes ready
+                 |
+                 |  A. Executor-side waiting or blocking
+                 v
+       Callback selected / bound to a worker
+                 |
+                 |  B. Worker runnable delay or preemption
+                 v
+       CPU feeder executes and submits work
+                 |
+                 v
+       GPU / downstream stage progresses</code></pre>
+<p>The two delays are <strong>causal categories</strong>, not
+necessarily disjoint wall-clock intervals. For example, while a feeder
+waits inside the executor, the worker might be running housekeeping code
+or might itself be descheduled. Trace-based attribution must distinguish
+these states rather than assign the entire wait to one layer.</p>
+<p><strong>Figure 1 — A critical callback is ready, but downstream work
+does not advance.</strong> A synchronized ROS–Linux–GPU timeline showing
+callback readiness, executor selection, worker on/off-CPU intervals, GPU
+submission, and GPU activity. Include two cases: (a) a feeder waiting
+behind a long non-preemptive callback; (b) a selected feeder whose
+worker loses CPU service. The first case shows a <em>limit of
+kernel-only intervention</em>, not yet the need for a new kernel
+mechanism.</p>
+<ul>
+<li><strong>Evidence needed:</strong> Matching callback/worker
+identities and timestamps; actual GPU idle or delayed downstream work;
+prevalence beyond a deliberately adversarial one-worker test.</li>
+<li><strong>Alternative explanation to rule out:</strong> GPU queue
+saturation, callback data unavailability, deliberate middleware
+ordering, or an executor that already avoids the delay.</li>
+</ul>
+<h3 id="is-a-new-coordination-mechanism-necessary">2.2 Is a new
+coordination mechanism necessary?</h3>
+<p>The central comparison is not merely executor-only versus kernel-only
+scheduling. <strong>Their best practical combination is the crucial
+baseline.</strong> If independently improved layers already eliminate
+the avoidable delay, a new cross-layer interface is not justified.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Comparison</th>
+<th>Question it answers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stock executor + deployed Linux scheduler</td>
+<td>What happens today?</td>
+</tr>
+<tr>
+<td>Callback-/chain-aware executor only</td>
+<td>How much delay originates in callback selection?</td>
+</tr>
+<tr>
+<td>Kernel-only scheduling improvement</td>
+<td>How much delay originates in CPU service?</td>
+</tr>
+<tr>
+<td><strong>Best existing executor + kernel combination</strong></td>
+<td><strong>What problem remains without a new interface?</strong></td>
+</tr>
+<tr>
+<td>Idealized selection/CPU-service oracle</td>
+<td>How much avoidable delay is theoretically left?</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Figure 2 — Existing fixes remove different delays; what
+remains after combining them?</strong> Compare those configurations with
+matched workload and CPU/GPU contention. Decompose
+readiness-to-submission time by <em>what the worker was doing</em> and
+<em>whether the feeder was selected</em>. Show the residual gap relative
+to the oracle, if any.</p>
+<ul>
+<li><strong>Hypothesis H1:</strong> Ready-but-unselected callbacks can
+materially delay downstream progress in realistic execution
+configurations.</li>
+<li><strong>Hypothesis H2:</strong> A measurable delay remains after
+combining strong executor and Linux scheduling baselines, especially
+when callback importance or worker assignment changes dynamically.</li>
+<li><strong>Decision point:</strong> If the combined baseline is near
+the oracle, or the issue disappears with an existing executor,
+<strong>revise the research problem rather than invent a kernel
+mechanism</strong>.</li>
+</ul>
+<h3 id="what-is-the-actual-missing-capability">2.3 What is the actual
+missing capability?</h3>
+<p>A thread is Linux’s scheduling entity, but its <em>current
+callback</em> determines whether CPU service unlocks useful downstream
+work. The same worker may execute a GPU feeder at one moment and
+housekeeping at another. A permanent boost may therefore favor the
+<strong>right thread at the wrong time</strong>.</p>
+<p>The unresolved question is more specific than “ROS and Linux cannot
+communicate”:</p>
+<blockquote>
+<p><strong>Which callback-level fact must change a Linux scheduling
+decision—or which Linux-level fact must change callback dispatch—for the
+combined system to outperform existing independent
+policies?</strong></p>
+</blockquote>
+<p>The answer might involve callback readiness, selection, worker
+binding, handoff, or the precise lifetime of the feeder segment. It is
+not yet known which information is necessary, whether existing
+interfaces can express it, or whether the remaining problem is large
+enough to matter.</p>
+<h2 id="key-insight-and-possible-system-design">3. Key Insight and
+Possible System Design</h2>
+<p><em>This section describes a design direction, not an established
+contribution. Its contents should be revised after Figures 1–2.</em></p>
+<h3 id="candidate-abstraction-a-short-lived-progress-gate">3.1 Candidate
+abstraction: a short-lived progress gate</h3>
+<p>A <strong>progress gate</strong> is a callback instance whose
+execution enables an important downstream stage, together with the
+worker that can execute it. Unlike a permanent per-thread priority, the
+gate has a limited lifetime and can move as callbacks are assigned to
+workers.</p>
+<p>Potential information to expose across the boundary:</p>
+<ul>
+<li><strong>Readiness and role:</strong> A dependency-critical callback
+is available; what progress can it unlock?</li>
+<li><strong>Binding:</strong> Which runnable worker can actually execute
+it, and when is that association valid?</li>
+<li><strong>Completion or cancellation:</strong> When should any special
+treatment stop or be withdrawn?</li>
+</ul>
+<p>The kernel does <strong>not</strong> need the whole ROS graph unless
+measurements show that a smaller interface fails. The executor should
+continue deciding callback order; Linux should continue accounting for
+and scheduling runnable threads.</p>
+<h3 id="candidate-mechanism-coordinate-only-actionable-decisions">3.2
+Candidate mechanism: coordinate only actionable decisions</h3>
+<p>If the evidence supports a missing capability, investigate a minimal
+contract between the executor and Linux:</p>
+<ol type="1">
+<li>The runtime identifies dependency-relevant work and selects or binds
+it to an executable worker.</li>
+<li>Linux uses that <em>current</em> association to provide
+<strong>bounded, short-lived</strong> CPU scheduling preference when it
+can accelerate the gate.</li>
+<li>The preference ends on submission, completion of the relevant CPU
+phase, handoff, cancellation, or timeout.</li>
+</ol>
+<p>A useful design must explicitly handle changing callback-to-worker
+mappings, multiple workers, overlapping gates, stale notifications, and
+competing background tasks. It must also say <strong>what it enables
+beyond simply combining a callback-aware executor with AGX/RELAY-like
+scheduling</strong>. If there is no such capability, keep the simpler
+solution.</p>
+<p><strong>Figure 3 — The smallest useful coordination
+boundary.</strong> Show callback readiness/selection and worker binding
+on the ROS side, runnable-worker scheduling on the Linux side, and the
+downstream submission event. Highlight only information that Figure 2
+establishes as missing. Include lifecycle expiration and the
+normal-scheduler fallback.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Design lens</th>
+<th>Question to settle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Abstraction</strong></td>
+<td>What is the minimum callback-to-worker progress information?</td>
+</tr>
+<tr>
+<td><strong>Mechanism</strong></td>
+<td>Is a new kernel interface or EEVDF modification actually
+required?</td>
+</tr>
+<tr>
+<td><strong>Policy</strong></td>
+<td>When is preferential CPU service worth its cost?</td>
+</tr>
+<tr>
+<td><strong>Trade-off</strong></td>
+<td>How much downstream progress is gained per unit of background
+interference and tracking overhead?</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Structural limit:</strong> A kernel boost cannot interrupt a
+non-preemptive callback <em>within</em> a worker. Correct callback
+selection, more workers, or callback preemption must address that case
+at the appropriate layer. Nor does changing fair-class weights establish
+hard real-time guarantees.</p>
+<h2 id="evaluation-and-discussion">4. Evaluation and Discussion</h2>
+<p><em>Figures in this section are planned evidence, not reported
+results. Each result should be written only after the corresponding
+experiment.</em></p>
+<h3
+id="does-coordination-outperform-the-strongest-existing-combination">4.1
+Does coordination outperform the strongest existing combination?</h3>
+<p><strong>Figure 4 — Downstream progress versus cost.</strong> Compare
+the proposed design, if justified, against stock ROS/Linux, strong
+executor-only and kernel-only policies, and <strong>their best existing
+combination</strong>. Plot readiness-to-submission latency (including
+tail latency) or critical-chain completion time <strong>against</strong>
+background CPU service or throughput. A speedup that requires
+disproportionately starving competing work is not sufficient.</p>
+<ul>
+<li><strong>Supports the claim if:</strong> Coordination improves the
+performance–interference frontier beyond the strongest existing
+combination.</li>
+<li><strong>Weakens the claim if:</strong> The combined baseline
+provides the same result at similar cost, or the benefit comes only from
+increasing the total priority budget.</li>
+</ul>
+<h3 id="when-does-the-failure-occur-and-when-does-it-disappear">4.2 When
+does the failure occur, and when does it disappear?</h3>
+<p><strong>Figure 5 — Sensitivity and generality.</strong> Vary executor
+design, worker count, callback lengths, callback-to-worker changes, CPU
+contention, GPU saturation, and dependency-chain shape. Include a
+realistic perception/planning pipeline after the controlled motivating
+experiment.</p>
+<ul>
+<li><strong>Supports generality if:</strong> The same
+<em>mechanism-level</em> failure appears across several credible
+configurations, not merely one non-preemptive worker.</li>
+<li><strong>Defines the boundary if:</strong> An optimized executor,
+abundant CPU capacity, or a GPU already saturated with queued work
+eliminates the benefit.</li>
+</ul>
+<h3 id="what-does-the-mechanism-cost-and-why-does-it-help">4.3 What does
+the mechanism cost, and why does it help?</h3>
+<p><strong>Figure 6 — Mechanism ablation and overhead.</strong> Disable
+individual information signals and kernel decisions; quantify
+event-processing cost, scheduling overhead, stale/incorrect hints,
+background fairness, and power where measurable. Explain <em>which</em>
+part of the proposed mechanism causes any improvement.</p>
+<ul>
+<li><strong>Supports the design if:</strong> The cross-layer information
+or policy removes a specific delay observed in Figure 2 at acceptable
+cost.</li>
+<li><strong>Challenges the design if:</strong> The same effect comes
+from static thread settings or a simpler existing OS interface.</li>
+</ul>
+<h3 id="measurement-foundations-and-first-experiments">4.4 Measurement
+foundations and first experiments</h3>
+<p>For each callback instance, instrument <strong>ready → selected/bound
+→ callback start → downstream submission</strong>, together with Linux
+wakeup, scheduling, and CPU-execution intervals. Standard
+<code>callback_start</code> is <strong>not</strong> a callback-ready
+timestamp. Join ROS tracing with scheduler traces using validated clocks
+and host thread IDs; LTTng <code>vpid</code>/<code>vtid</code> are
+PID-namespace-relative. Verify the <em>deployed</em> Linux scheduler
+rather than assuming a vendor 5.15 kernel implements mainline EEVDF.</p>
+<p>First measurements, in order:</p>
+<ol type="1">
+<li><strong>Produce Figure 1:</strong> A feeder-versus-housekeeping
+microbenchmark, then confirm the phenomenon in a realistic ROS
+pipeline.</li>
+<li><strong>Produce Figure 2:</strong> Tune existing executor and Linux
+policies separately and jointly, and identify any unexplained residual
+delay.</li>
+<li><strong>Only if necessary, build Figure 3’s mechanism:</strong>
+Implement the minimum missing interface; collect Figures 4–6 to justify
+its complexity.</li>
+</ol>
+<p>Keep experiment configurations, raw traces, analysis scripts, and
+regenerated figures reproducible. Do not claim bounded worst-case
+end-to-end latency without a corresponding execution, blocking, and
+device-service model.</p>
+<h2 id="relation-to-prior-work">5. Relation to Prior Work</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Work</th>
+<th>Established idea</th>
+<th>Distinction this project must establish</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Linux AGX</strong></td>
+<td>Dependency-/GPU-aware weighting and feeder support in Linux fair
+scheduling</td>
+<td>A feeder may remain hidden as an unselected ROS callback; show why
+existing weight changes are insufficient.</td>
+</tr>
+<tr>
+<td><strong>RELAY</strong></td>
+<td>Boundary-scoped CPU scheduling for Transformer runtime-selected GPU
+work</td>
+<td>Demonstrate a failure or required control point <em>before or
+across</em> ROS callback selection, not just a ROS port of RELAY.</td>
+</tr>
+<tr>
+<td><strong>PiCAS and related ROS executors</strong></td>
+<td>Callback-/chain-aware dispatch</td>
+<td>Identify residual host-scheduling limitations <strong>after</strong>
+applying credible executor policies.</td>
+</tr>
+<tr>
+<td><strong>Teper et al. (RTAS 2025)</strong></td>
+<td>ROS 2 executor changes to support scheduling analysis</td>
+<td>Account for their executor semantics and compare against their
+strongest relevant configuration.</td>
+</tr>
+<tr>
+<td><strong>CROS-RT (RTAS 2025)</strong></td>
+<td>Coordination between ROS-level and OS-level execution</td>
+<td>Establish a distinct GPU-/dependency-progress problem beyond generic
+ROS–Linux priority propagation.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Novelty threshold:</strong> The fact that callback and thread
+schedulers operate at different layers is already known. The
+contribution must be a <strong>specific, measured failure</strong>, a
+<strong>necessary new capability</strong>, and a
+<strong>baseline-resistant improvement</strong>.</p>
+<h2 id="conclusions">6. Conclusions</h2>
+<p>The intended conclusion is not that ROS 2 and Linux should always be
+coordinated. It is a more precise answer to three questions:</p>
+<ol type="1">
+<li><strong>Existence:</strong> Under what workloads does callback
+selection or Linux CPU service prevent downstream progress?</li>
+<li><strong>Necessity:</strong> Which delays survive competitive
+executor scheduling, kernel scheduling, and their existing
+combination?</li>
+<li><strong>Significance:</strong> If coordination is necessary, what
+minimal abstraction improves useful progress without unacceptable
+fairness or implementation cost?</li>
+</ol>
+<p>If evidence supports all three, the broader systems lesson may be
+that <strong>CPU scheduling should account for short-lived application
+progress dependencies whose meaning changes as runtime work items are
+bound to OS threads</strong>. If the combined baseline already solves
+the problem, that finding should redirect the project rather than be
+concealed.</p>
+<hr />
+<p><em>Reading foundation: Linux AGX; RELAY; PiCAS; Teper et al. (RTAS
+2025); CROS-RT (RTAS 2025); George M. Whitesides, “Whitesides’ Group:
+Writing a Paper.”</em></p>
